@@ -14,6 +14,8 @@ export default function Description() {
           ・漢字の対応予定はないです。（無理なので...）
           <br />
           ・文字コードはUnicodeです。
+          <br />
+          ・使っていい記号「！」「!」「？」「?」「ー」「-」「♡」。
         </p>
       </div>
     </>

@@ -1,5 +1,6 @@
 "use client";
 
+import { data } from "@/app/lib/data";
 import styles from "@/app/ui/home.module.css";
 import { ChangeEvent, useRef, useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
@@ -21,10 +22,11 @@ export default function Form() {
 
   // バリデーション関数
   const validateInput = (value: string) => {
-    // ひらがな、カタカナ、アルファベットのみを許可する正規表現
+    // ひらがな、カタカナ、アルファベット、特定の記号のみを許可する正規表現
+    const regex = /^[ぁ-んァ-ンA-Za-z！!？?ー\-♡]+$/;
     return (
-      /^[ぁ-んァ-ンA-Za-z]+$/.test(value) ||
-      "ひらがな、カタカナ、アルファベット以外が含まれています。"
+      regex.test(value) ||
+      "ひらがな、カタカナ、アルファベット、特定の記号以外が含まれています。"
     );
   };
 
@@ -54,43 +56,52 @@ export default function Form() {
     return str.toUpperCase();
   };
 
-  // Unicodeに変換
-  const toUnicode = (str: string): string => {
-    return str
-      .split("")
-      .map((char) => {
-        return "\\u" + ("0000" + char.charCodeAt(0).toString(16)).slice(-4);
-      })
-      .join("");
+  // アスキーアートに変換
+  const toAsciiArt = (string: string): string => {
+    // lib 配列内の対応する文字を検索
+    const art: string = data.reduce((acc, item) => {
+      const foundLetter = item.letters.find((letter) => letter.text === string);
+      return foundLetter ? foundLetter.art : acc;
+    }, "Not Found");
+
+    return art;
   };
 
-  // アスキーアートに変換
-  const toAsciiArt = (str: string): string => {
-    return str;
+  // 渡された文字をアスキーアートに変換
+  const transformString = (letter: string): string => {
+    let transformedString = "";
+
+    if (/^[ぁ-ん]+$/.test(letter)) {
+      // ひらがなをカタカナにする関数
+      transformedString = toKatakana(letter);
+    } else if (/^[a-z]+$/.test(letter)) {
+      // アルファベットを大文字に変換
+      transformedString = toUpperCase(letter);
+    } else {
+      // そのまま表示
+      transformedString = letter;
+    }
+
+    return transformedString;
   };
 
   // 生成ボタン押下
   const onSubmit: SubmitHandler<Inputs> = (data: Inputs): void => {
-    console.log(data.form);
+    // アスキーアート変換前の文字列
+    const stringArr: string[] = data.form
+      .split("")
+      .map((letter) => transformString(letter));
+    console.log(stringArr);
 
-    let transformedString = "";
+    // アスキーアート変換後の文字列
+    const asciiArtArr: string[] = stringArr.map((string) => toAsciiArt(string));
+    console.log(asciiArtArr);
 
-    if (/^[ぁ-ん]+$/.test(data.form)) {
-      // ひらがなをカタカナにする関数
-      transformedString = toKatakana(data.form);
-    } else if (/^[a-z]+$/.test(data.form)) {
-      // アルファベットを大文字に変換
-      transformedString = toUpperCase(data.form);
-    } else {
-      // そのまま表示
-      transformedString = data.form;
-    }
-
-    // 文字コードに変換
-    const unicode: string = toUnicode(transformedString);
+    // Twitterの仕様上、一行目にドットがないとスペースが省略されてしまう
+    asciiArtArr.unshift(".\r");
 
     // 文字コードをAAに変換
-    const asciiArt: string = toAsciiArt(unicode);
+    const asciiArt: string = asciiArtArr.join("");
 
     setResult(asciiArt);
   };
