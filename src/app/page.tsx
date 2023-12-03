@@ -1,26 +1,20 @@
 import Image from "next/image";
 import Form from "./ui/form/form";
+import Description from "./ui/description/description";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {/* ヘッダー部 */}
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex"></div>
+      <div className="relative flex place-items-center justify-between font-mono text-sm lg:flex">
+        アスキーアート変換
+      </div>
 
       {/* コンテンツ部 */}
       <div className="">
-        <p>
-          入力した文字をX（旧Twitter）用のアスキーアートにして返すサイトです。{" "}
-          <br />
-          ・漢字、ひらがなはカタカナに変換されます。
-          <br />
-          ・ひらがなは対応予定です。（のちのち...）
-          <br />
-          ・漢字は対応予定ないです。（無理なので...）
-          <br />
-          ・文字コードはUnicodeです。
-        </p>
-        {/* 入力 */}
+        {/* 説明 */}
+        <Description />
+        {/* フォーム */}
         <Form />
       </div>
 
