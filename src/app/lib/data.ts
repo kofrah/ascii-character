@@ -179,7 +179,7 @@ export const data: Lib[] = [
         text: "シ",
         prounounce: "shi",
         unicode: "\u30b7",
-        art: "┏━━┓┏┓\n┗━━┛┃┃\n┏━━┓┃┃\n┗━━┛┃┃\n┏━━━┛┃\n┗━━━━┛\n",
+        art: "　　　　┏┓\n┏━━┓┃┃\n┣━━┫┃┃\n┗━━┛┃┃\n┏━━━┛┃\n┗━━━━┛\n",
       },
       {
         text: "ス",
