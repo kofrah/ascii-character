@@ -390,7 +390,7 @@ export const data: Lib[] = [
         text: "ガ",
         prounounce: "ga",
         unicode: "\u30ac",
-        art: "　┏┓┏┳┓\n┏┛┗┻┻┫\n┗┓┏━┓┃\n　┃┃　┃┃\n┏┛┛┏┛┃\n┗┛　┗━┛\n",
+        art: "　┏┓┏┳┓\n┏┛┗┗┻┫\n┗┓┏━┓┃\n　┃┃　┃┃\n┏┛┛┏┛┃\n┗┛　┗━┛\n",
       },
       {
         text: "ギ",
@@ -402,19 +402,19 @@ export const data: Lib[] = [
         text: "グ",
         prounounce: "gu",
         unicode: "\u30b0",
-        art: "┏┓　┏┳┓\n┃┗━┻╋┛\n┃┏━┓┃　\n┗┛　┃┃　\n　　┏┛┃　\n　　┗━┛　\n",
+        art: "┏┓　┏┳┓\n┃┗━┗╋┛\n┃┏━┓┃　\n┗┛　┃┃　\n　　┏┛┃　\n　　┗━┛　\n",
       },
       {
         text: "ゲ",
         prounounce: "ge",
         unicode: "\u30b2",
-        art: "┏┓    ┏┳┓ \n┃┗━┻╋┛ \n┃┏┓┏┛     \n┗┛┃┃      \n       ┃┃        \n       ┗┛          \n",
+        art: "┏┓　┏┳┓\n┃┗━┗┻┫\n┃┏━┓┏┛\n┗┛　┃┃　\n　　　┃┃　\n　　　┗┛　\n",
       },
       {
         text: "ゴ",
         prounounce: "go",
         unicode: "\u30b4",
-        art: "　　　┏┳┓\n┏━━┻┻┫\n┗━━━┓┃\n　　　　┃┃\n┏━━━┛┃\n┗━━━━┛\n",
+        art: "　　　┏┳┓\n┏━━┗┻┫\n┗━━━┓┃\n　　　　┃┃\n┏━━━┛┃\n┗━━━━┛\n",
       },
       {
         text: "ザ",
@@ -438,7 +438,7 @@ export const data: Lib[] = [
         text: "ゼ",
         prounounce: "ze",
         unicode: "\u30bc",
-        art: "　┏┓┏┳┓\n┏┛┗┻┻┫\n┗┓┏━┓┃\n　┃┃　┗┛\n　┃┗━━┓\n　┗━━━┛\n",
+        art: "　┏┓┏┳┓\n┏┛┗┗┻┫\n┗┓┏━┓┃\n　┃┃　┗┛\n　┃┗━━┓\n　┗━━━┛\n",
       },
       {
         text: "ゾ",
@@ -452,13 +452,23 @@ export const data: Lib[] = [
         unicode: "\u30c0",
         art: "┏━━┏┳┓\n┃┏━━┻┫\n┃┃┏━┛┃\n┗┛┗━┓┃\n　　　┏┛┃\n　　　┗━┛\n",
       },
-      { text: "ヂ", prounounce: "ji", unicode: "\u30c2", art: "NotCreated\n" },
-      { text: "ヅ", prounounce: "zu", unicode: "\u30c5", art: "NotCreated\n" },
+      {
+        text: "ヂ",
+        prounounce: "ji",
+        unicode: "\u30c2",
+        art: "　┏━┏┳┓　\n　┗┓┗┻┛\n┏━┛┗━┓\n┗━┓┏━┛\n　┏┛┛　　\n　┗┛　　　\n",
+      },
+      {
+        text: "ヅ",
+        prounounce: "zu",
+        unicode: "\u30c5",
+        art: "　　　┏┳┓\n┏┓┏┗┻┫\n┃┃┃┃┃┃\n┗┛┗┛┃┃\n┏━━━┛┃\n┗━━━━┛\n",
+      },
       {
         text: "デ",
         prounounce: "de",
         unicode: "\u30c7",
-        art: "　┏━┳┳┓\n　┗━┻┻┛\n┏━━━━┓\n┗━┓┏━┛\n　┏┛┛　　\n　┗┛　　　\n",
+        art: "　┏━┏┳┓\n　┗━┗┻┛\n┏━━━━┓\n┗━┓┏━┛\n　┏┛┛　　\n　┗┛　　　\n",
       },
       {
         text: "ド",
@@ -470,7 +480,7 @@ export const data: Lib[] = [
         text: "バ",
         prounounce: "ba",
         unicode: "\u30D0",
-        art: "┏┓　┏┳┓\n┃┃　┗┻┛\n┃┗━━━┓\n┃┏━━━┛\n┃┗━━━┓\n┗━━━━┛\n",
+        art: "　　　┏┳┓\n　┏┓┣╋┛\n　┃┃┃┃　\n　┃┃┃┗┓\n┏┛┛┗┓┃\n┗┛　　┗┛\n",
       },
       {
         text: "ビ",
@@ -488,7 +498,7 @@ export const data: Lib[] = [
         text: "ベ",
         prounounce: "be",
         unicode: "\u30D9",
-        art: "　　　┏┳┓\n　┏━┣┗┛\n┏┛━┗┓　\n┗┛　┗┗┓\n　　　　┗┛\n",
+        art: "　　　┏┳┓\n　┏━╋┻┛\n┏┛━┗┓　\n┗┛　┗┗┓\n　　　　┗┛\n",
       },
       {
         text: "ボ",
@@ -497,7 +507,12 @@ export const data: Lib[] = [
         art: "　　┏┳┳┓\n┏━┛┗┻┫\n┗━┓┏━┛\n┏┓┃┃┏┓\n┃┃┃┃┃┃\n┗┛┗┛┗┛\n",
       },
       // 半濁音
-      { text: "パ", prounounce: "pa", unicode: "\u30D1", art: "NotCreated\n" },
+      {
+        text: "パ",
+        prounounce: "pa",
+        unicode: "\u30D1",
+        art: "　　　　┏┓\n　┏┓┏┗┛\n　┃┃┃┃　\n　┃┃┃┗┓\n┏┛┛┗┓┃\n┗┛　　┗┛\n",
+      },
       {
         text: "ピ",
         prounounce: "pi",
@@ -520,7 +535,7 @@ export const data: Lib[] = [
         text: "ポ",
         prounounce: "po",
         unicode: "\u30DD",
-        art: "　　┏┓┏┓\n┏━┛┗┻┫\n┗━┓┏━┛\n┏┓┃┃┏┓\n┃┃┃┃┃┃\n┗┛┗┛┗┛\n",
+        art: "　　┏┓┏┓\n┏━┛┗┗┛\n┗━┓┏━┛\n┏┓┃┃┏┓\n┃┃┃┃┃┃\n┗┛┗┛┗┛\n",
       },
       // 小文字
       {
@@ -546,19 +561,19 @@ export const data: Lib[] = [
         text: "ャ",
         prounounce: "small_ya",
         unicode: "\u30e3",
-        art: "NotCreated\n",
+        art: "　　　　　　\n　　┏┓　　\n　┏┛┗━┓\n　┗┓┏┓┃\n　　┃┃┗┛\n　　┗┛　　\n",
       },
       {
         text: "ュ",
         prounounce: "small_yu",
         unicode: "\u30e5",
-        art: "NotCreated\n",
+        art: "　　　　　　\n　　┏━┓　\n　　┗┓┃　\n　　┏┛┗┓\n　　┗━━┛\n",
       },
       {
         text: "ョ",
         prounounce: "small_yo",
         unicode: "\u30e7",
-        art: "NotCreated\n",
+        art: "　　　　　　\n　　┏━━┓\n　　┣━　┃\n　　┣━　┃\n　　┗━━┛\n",
       },
       // 促音
       {
