@@ -3,6 +3,8 @@ import { Lib } from "./definition";
 export const data: Lib[] = [
   {
     kind: "Hiragana",
+    vector: "vertical",
+    width: "full",
     letters: [
       { text: "あ", prounounce: "a", unicode: "\u3042", art: "NotCreated\n" },
       { text: "い", prounounce: "i", unicode: "\u3044", art: "NotCreated\n" },
@@ -107,6 +109,8 @@ export const data: Lib[] = [
   },
   {
     kind: "Katakana",
+    vector: "vertical",
+    width: "full",
     letters: [
       // 清音
       {
@@ -587,6 +591,8 @@ export const data: Lib[] = [
   },
   {
     kind: "Alphabet",
+    vector: "vertical",
+    width: "full",
     letters: [
       { text: "A", prounounce: "A", unicode: "\u0041", art: "NotCreated\n" },
       { text: "B", prounounce: "B", unicode: "\u0042", art: "NotCreated\n" },
@@ -618,6 +624,8 @@ export const data: Lib[] = [
   },
   {
     kind: "Mark",
+    vector: "vertical",
+    width: "full",
     letters: [
       {
         text: "ー",
