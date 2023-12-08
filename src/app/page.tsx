@@ -12,10 +12,10 @@ export default function Home() {
 
       {/* コンテンツ部 */}
       <div className="">
-        {/* 説明 */}
-        <Description />
         {/* フォーム */}
         <Form />
+        {/* 説明 */}
+        <Description />
       </div>
 
       {/* フッター部 */}

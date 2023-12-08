@@ -202,7 +202,7 @@ export const data: Lib[] = [
         text: "ソ",
         prounounce: "so",
         unicode: "\u30bd",
-        art: "┏┓　　┏┓\n┗┗┓　┃┃\n　┗┛　┃┃\n　　　┏┛┛\n　┏━┛┛\n　┗━┛\n",
+        art: "┏┓　　┏┓\n┗┗┓　┃┃\n　┗┛　┃┃\n　　　┏┛┛\n　┏━┛┛　\n　┗━┛　　\n",
       },
       {
         text: "タ",
@@ -232,7 +232,7 @@ export const data: Lib[] = [
         text: "ト",
         prounounce: "to",
         unicode: "\u30c8",
-        art: "　┏━┓　　\n　┃　┗━┓\n　┃　┏━┛\n　┃　┃　　\n　┗━┛　　\n",
+        art: "　┏━┓　　\n　┃　┃　　\n　┃　┗━┓\n　┃　┏━┛\n　┃　┃　　\n　┗━┛　　\n",
       },
       {
         text: "ナ",
@@ -528,13 +528,13 @@ export const data: Lib[] = [
         text: "プ",
         prounounce: "pu",
         unicode: "\u30D7",
-        art: "　　　　┏┓\n┏━━━┗┛\n┗━━━┓┃\n　　　┏┛┛\n　　┏┛┛　\n　┏┛┛　　\n　┗┛　　　\n",
+        art: "　　　　┏┓\n┏━━━┗┛\n┗━━━┓┃\n　　　┏┛┛\n　　┏┛┛　\n　　┗┛　　　\n",
       },
       {
         text: "ペ",
         prounounce: "pe",
         unicode: "\u30DA",
-        art: "　　　　┏┓\n　┏━┓┗┛\n┏┛━┗┓　\n┃┃　┗┗┓\n┗┛　　┃┃\n　　　　┗┛\n",
+        art: "　　　　┏┓\n　┏━┓┗┛\n┏┛━┗┓　\n┃┃　┗┗┓\n┗┛　　┃┃\n　　　┗┛\n",
       },
       {
         text: "ポ",
@@ -637,13 +637,13 @@ export const data: Lib[] = [
         text: "！",
         prounounce: "！",
         unicode: "\uff01",
-        art: "　　┏┓　　\n　　┃┃　　\n　　┗┛　　\n　　┏┓　　\n　　┗┛　　\n",
+        art: "　　┏┓　　\n　　┃┃　　\n　　┃┃　　\n　　┗┛　　\n　　┏┓　　\n　　┗┛　　\n",
       },
       {
         text: "!",
         prounounce: "!",
         unicode: "!",
-        art: "　　┏┓　　\n　　┃┃　　\n　　┗┛　　\n　　┏┓　　\n　　┗┛　　\n",
+        art: "　　┏┓　　\n　　┃┃　　\n　　┃┃　　\n　　┗┛　　\n　　┏┓　　\n　　┗┛　　\n",
       },
       {
         text: "？",

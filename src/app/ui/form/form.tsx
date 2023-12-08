@@ -1,13 +1,16 @@
 "use client";
 
 import { data } from "@/app/lib/data";
+import {
+  Inputs,
+  Letter,
+  SubmitButton,
+  submitButtons,
+  widthOptions,
+} from "@/app/lib/definition";
 import styles from "@/app/ui/home.module.css";
 import { ChangeEvent, useRef, useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
-
-type Inputs = {
-  form: string;
-};
 
 export default function Form() {
   const {
@@ -18,6 +21,8 @@ export default function Form() {
 
   // 変換結果のState
   const [result, setResult] = useState("");
+
+  const submitRef = useRef<HTMLInputElement>(null);
 
   // バリデーション関数
   const validateInput = (value: string) => {
@@ -39,8 +44,8 @@ export default function Form() {
   const [useAlphabet, setUseAlphabet] = useState(false);
   // 変換オプション(記号)を使用するかのState
   const [useMark, setUseMark] = useState(false);
-
-  const formBRef = useRef();
+  // 変換オプション(記号)を使用するかのState
+  const [useHorizon, setUseHorizon] = useState(true);
 
   // ひらがなをカタカナにする関数
   const toKatakana = (hiragana: string): string => {
@@ -59,9 +64,11 @@ export default function Form() {
   const toAsciiArt = (string: string): string => {
     // lib 配列内の対応する文字を検索
     const art: string = data.reduce((acc, item) => {
-      const foundLetter = item.letters.find((letter) => letter.text === string);
+      const foundLetter: Letter | undefined = item.letters.find(
+        (letter) => letter.text === string
+      );
       return foundLetter ? foundLetter.art : acc;
-    }, "Not Found");
+    }, "N/A");
 
     return art;
   };
@@ -85,19 +92,19 @@ export default function Form() {
   };
 
   // 生成ボタン押下
-  const onSubmit: SubmitHandler<Inputs> = (data: Inputs): void => {
+  const createArt: SubmitHandler<Inputs> = (data: Inputs): void => {
+    console.log("InputsData", data);
+
     // アスキーアート変換前の文字列
-    const stringArr: string[] = data.form
+    const stringArr: string[] = data.inputArea
       .split("")
       .map((letter) => transformString(letter));
-    console.log(stringArr);
 
     // アスキーアート変換後の文字列
     let asciiArtArr: string[] = stringArr.map((string) => toAsciiArt(string));
-    console.log(asciiArtArr);
 
     // 横書き対応
-    if (true) {
+    if (useHorizon) {
       const splitedArtsArr: string[][] = asciiArtArr.map((art) =>
         art.split("\n")
       );
@@ -133,6 +140,17 @@ export default function Form() {
     }
   };
 
+  const handleClickCreateButton = (e: any) => {
+    setUseHorizon(e.target.value === "horizon");
+
+    // setUseHorizonを書き換えてからsubmitする
+    setTimeout(() => {
+      if (submitRef.current) {
+        submitRef.current.click();
+      }
+    }, 0);
+  };
+
   // コピーボタン押下
   const handleCopy = async () => {
     try {
@@ -148,24 +166,39 @@ export default function Form() {
 
   return (
     <>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={handleSubmit(createArt)}>
         {/* 入力エリア */}
-        <input
-          {...register("form", {
-            required: "入力してください！",
-            // maxLength: {
-            //   value: 4,
-            //   message: "4文字以内でお願いします（；；）",
-            // },
-            validate: validateInput,
-          })}
-        />
-        {errors.form && <span>{errors.form.message}</span>}
+        <div>
+          <input
+            placeholder="ここに文字を入力"
+            {...register("inputArea", {
+              required: "入力してください！",
+              validate: validateInput,
+            })}
+          />
+          {errors.inputArea && <span>{errors.inputArea.message}</span>}
+        </div>
 
         {/* オプションエリア */}
-        <div>{/* ラジオボタン(縦書き、横書き) */}</div>
+        {/* ラジオボタン(半角・全角) */}
+        <div className="form__item">
+          <div className="radioGroup">
+            {widthOptions.map((item) => (
+              <label className="radioGroup__label" key={item.value}>
+                <input
+                  className="radioGroup__radio"
+                  type="radio"
+                  {...register("widthOption", { required: true })}
+                  value={item.value}
+                  defaultChecked={item.key === 1}
+                />
+                {item.label}
+              </label>
+            ))}
+          </div>
+        </div>
+        {/* チェックボックス・「ランダム作成する」 */}
         <div>
-          {/* チェックボックス・「ランダム作成する」 */}
           <label>
             <input type="checkbox" onChange={(e) => handleUseRandom(e)} />
             ランダム生成
@@ -216,20 +249,21 @@ export default function Form() {
           </label>
         </div>
 
-        {/* 生成 */}
+        {/* 生成ボタン */}
         <div>
-          <input
-            className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-            type="submit"
-            value="生成"
-            // disabled={true}
-          />
-          <input
-            className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-            type="submit"
-            value="デコる"
-            // disabled={true}
-          />
+          {submitButtons.map((button: SubmitButton) => (
+            <button
+              key={button.key}
+              type="button"
+              className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+              value={button.value}
+              onClick={handleClickCreateButton}
+            >
+              {button.label}
+            </button>
+          ))}
+
+          <input type="submit" className="hidden" ref={submitRef} />
         </div>
       </form>
 
