@@ -13,7 +13,6 @@ export default function Form() {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm<Inputs>();
 
@@ -94,8 +93,22 @@ export default function Form() {
     console.log(stringArr);
 
     // アスキーアート変換後の文字列
-    const asciiArtArr: string[] = stringArr.map((string) => toAsciiArt(string));
+    let asciiArtArr: string[] = stringArr.map((string) => toAsciiArt(string));
     console.log(asciiArtArr);
+
+    // 横書き対応
+    if (true) {
+      const splitedArtsArr: string[][] = asciiArtArr.map((art) =>
+        art.split("\n")
+      );
+
+      const transposedArtArr: string[] = splitedArtsArr[0]
+        .map((_, i) => splitedArtsArr.map((row) => row[i]))
+        .map((row) => row.join(""))
+        .map((row) => row + "\n");
+
+      asciiArtArr = transposedArtArr;
+    }
 
     // Twitterの仕様上、一行目にドットがないとスペースが省略されてしまう
     asciiArtArr.unshift(".\r");
