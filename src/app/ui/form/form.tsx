@@ -61,12 +61,16 @@ export default function Form() {
   };
 
   // アスキーアートに変換
-  const toAsciiArt = (string: string): string => {
+  const toAsciiArt = (char: string): string => {
+    // 半角/全角のチェック
+    const isHalf: boolean = true;
+
     // lib 配列内の対応する文字を検索
     const art: string = data.reduce((acc, item) => {
       const foundLetter: Letter | undefined = item.letters.find(
-        (letter) => letter.text === string
+        (letter) => letter.text === char
       );
+
       return foundLetter ? foundLetter.art : acc;
     }, "N/A");
 
