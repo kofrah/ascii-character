@@ -32,8 +32,8 @@ export type WidthOption = {
 };
 
 export const widthOptions: WidthOption[] = [
-  { key: 1, value: "full", label: "半角" },
-  { key: 2, value: "half", label: "全角" },
+  { key: 1, value: "half", label: "半角" },
+  { key: 2, value: "full", label: "全角" },
 ];
 
 // 生成ボタンの型定義

@@ -5,6 +5,7 @@ import {
   Inputs,
   Letter,
   SubmitButton,
+  Width,
   submitButtons,
   widthOptions,
 } from "@/app/lib/definition";
@@ -61,12 +62,18 @@ export default function Form() {
   };
 
   // アスキーアートに変換
-  const toAsciiArt = (char: string): string => {
-    // 半角/全角のチェック
-    const isHalf: boolean = true;
+  const toAsciiArt = (char: string, width: Width): string => {
+    console.log(width);
+
+    let filterdData;
+    if (width === "half") {
+      filterdData = data.filter((x) => x.width === "half");
+    } else {
+      filterdData = data.filter((x) => x.width === "full");
+    }
 
     // lib 配列内の対応する文字を検索
-    const art: string = data.reduce((acc, item) => {
+    const art: string = filterdData.reduce((acc, item) => {
       const foundLetter: Letter | undefined = item.letters.find(
         (letter) => letter.text === char
       );
@@ -105,7 +112,9 @@ export default function Form() {
       .map((letter) => transformString(letter));
 
     // アスキーアート変換後の文字列
-    let asciiArtArr: string[] = stringArr.map((string) => toAsciiArt(string));
+    let asciiArtArr: string[] = stringArr.map((string) =>
+      toAsciiArt(string, data.widthOption)
+    );
 
     // 横書き対応
     if (useHorizon) {
