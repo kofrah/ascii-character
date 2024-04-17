@@ -635,7 +635,7 @@ export const data: Lib[] = [
         text: "キ",
         prounounce: "ki",
         unicode: "\u30ad",
-        art: "     ┌┐     \n┌─┘└─┐\n└─┐┌─┘\n┌─┘└─┐\n└─┐┌─┘\n     └┘  \n",
+        art: "     ┌┐     \n┌─┘└─┐\n└─┐┌─┘\n┌─┘└─┐\n└─┐┌─┘\n",
       },
       {
         text: "ク",
@@ -671,7 +671,7 @@ export const data: Lib[] = [
         text: "ス",
         prounounce: "su",
         unicode: "\u30b9",
-        art: " ┌────┐\n└──┐┌┘\n      / / │   \n    / /  ││ \n └┘    └┘\n",
+        art: "┌────┐\n└──┐┌┘\n      / / │   \n    / /  ││ \n └┘    └┘\n",
       },
       {
         text: "セ",
@@ -689,7 +689,7 @@ export const data: Lib[] = [
         text: "タ",
         prounounce: "ta",
         unicode: "\u30bf",
-        art: "┌────┐\n│┌──┐│\n│└──┘│\n└┘  ─┐│\n       └─┘ \n",
+        art: "┌────┐\n│┌──┐│\n│└──┘│\n└┘  ─┐│\n      └─┘ \n",
       },
       {
         text: "チ",
@@ -719,19 +719,19 @@ export const data: Lib[] = [
         text: "ナ",
         prounounce: "na",
         unicode: "\u30ca",
-        art: "  ┌┐  \n┌─┘└─┐\n└─┐┌─┘\n  ││  \n ┌┘┘  \n └┘   \n",
+        art: "      ┌┐      \n┌─┘└─┐\n└─┐┌─┘\n ┌┘┘       \n └┘         \n",
       },
       {
         text: "ニ",
         prounounce: "ni",
         unicode: "\u30cb",
-        art: "      \n ┌──┐ \n └──┘ \n      \n┌────┐\n└────┘\n",
+        art: "       \n  ┌──┐ \n  └──┘ \n┌────┐\n└────┘\n",
       },
       {
         text: "ヌ",
         prounounce: "nu",
         unicode: "\u30cc",
-        art: "┌────┐\n└──┐ │\n ┌─┘┌┘\n └┬ └┐\n┌─┘└┐│\n└─┘ └┘\n",
+        art: "┌────┐   \n└──┐┌┘   \n  ┌─┘  └┐  \n┌─┘┘└┐│ \n└─┘      └┘\n",
       },
       {
         text: "ネ",
@@ -743,7 +743,7 @@ export const data: Lib[] = [
         text: "ノ",
         prounounce: "no",
         unicode: "\u30ce",
-        art: "  ┌┐  \n  ││  \n  ││  \n ┌┘┘  \n┌┘┘   \n└┘    \n",
+        art: "       ┌┐   \n       ││   \n   ┌┘┘   \n┌┘┘      \n└┘          \n",
       },
       {
         text: "ハ",
