@@ -7,7 +7,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {/* ヘッダー部 */}
       <div className="relative flex place-items-center justify-between font-mono text-sm lg:flex">
-        罫線AAジェネレーター
+        デカ文字AAジェネレーター
       </div>
 
       {/* コンテンツ部 */}
