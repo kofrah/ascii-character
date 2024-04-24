@@ -743,7 +743,7 @@ export const data: Lib[] = [
         text: "ノ",
         prounounce: "no",
         unicode: "\u30ce",
-        art: "       ┌┐   \n       ││   \n   ┌┘┘   \n┌┘┘      \n└┘          \n",
+        art: "       ┌┐  \n       ││   \n   ┌┘┘   \n┌┘┘      \n└┘        \n",
       },
       {
         text: "ハ",
@@ -785,7 +785,7 @@ export const data: Lib[] = [
         text: "ミ",
         prounounce: "mi",
         unicode: "\u30df",
-        art: "         \n┌────┐\n├────┘\n├────┘\n└────┘\n",
+        art: "                \n┌────┐\n├────┘\n├────┘\n└────┘\n",
       },
       {
         text: "ム",
@@ -803,7 +803,7 @@ export const data: Lib[] = [
         text: "モ",
         prounounce: "mo",
         unicode: "\u30e2",
-        art: "┌────┐\n└─┐┌─┘\n┌─┘└─┐\n└─┐┌─┘\n     └──┘\n",
+        art: "┌────┐\n└─┐┌─┘\n┌─┘└─┐\n└─┐┌─┘\n     └──┘ \n",
       },
       {
         text: "ヤ",
@@ -821,7 +821,7 @@ export const data: Lib[] = [
         text: "ヨ",
         prounounce: "yo",
         unicode: "\u30e8",
-        art: "┌────┐\n└───┐│\n┌───┘│\n└───┐│\n┌───┘│\n└────┘\n",
+        art: "┌────┐\n└───┐│\n┌───┘│\n└───┐│\n┌───┘│\n",
       },
       {
         text: "ラ",
@@ -833,19 +833,19 @@ export const data: Lib[] = [
         text: "リ",
         prounounce: "ri",
         unicode: "\u30ea",
-        art: " ┌┐ ┌┐\n ││ ││\n ││ ││\n └┘ ││\n  ┌─┘│\n  └──┘\n",
+        art: "┌┐  ┌┐ \n ││  ││ \n └┘ ││  \n       ││  \n      └┘   \n",
       },
       {
         text: "ル",
         prounounce: "ru",
         unicode: "\u30eb",
-        art: "   ┌┐  \n ┌┐││  \n ││││  \n ││││  \n┌┘┘│└┐ \n└┘ └─┘ \n",
+        art: "        ┌┐    \n   ┌┐││    \n   ││ ││    \n┌┘┘ │└┐ \n└┘    └─┘ \n",
       },
       {
         text: "レ",
         prounounce: "re",
         unicode: "\u30ec",
-        art: "┌┐    \n││    \n││  ┌┐\n││ ┌┌┘\n│└─┌┘ \n└──┘  \n",
+        art: "  ┌┐          \n   ││    ┌┐\n   ││   / /   \n   │└┘/     \n   └─┘      \n",
       },
       {
         text: "ロ",
@@ -863,13 +863,13 @@ export const data: Lib[] = [
         text: "ヲ",
         prounounce: "wo",
         unicode: "\u30f2",
-        art: "┌────┐\n└───┐│\n┌───┘│\n└───┐│\n  ┌─┘┘\n  └─┘ \n",
+        art: "┌────┐\n├───   │\n└──┐   │\n        /   /   \n     └─┘   \n",
       },
       {
         text: "ン",
         prounounce: "n",
         unicode: "\u30f3",
-        art: "          ┌┐\n┌──┐││\n└──┘││\n┌───┘│\n└────┘\n",
+        art: "           ┌┐\n┌──┐││\n└──┘││\n┌───┘│\n└────┘\n",
       },
       // 濁音
       {
