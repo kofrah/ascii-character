@@ -82,26 +82,22 @@ export const data: Lib[] = [
       // 拗音
       {
         text: "ゃ",
-
         unicode: "\u3083",
         art: "NotCreated\n",
       },
       {
         text: "ゅ",
-
         unicode: "\u3085",
         art: "NotCreated\n",
       },
       {
         text: "ょ",
-
         unicode: "\u3087",
         art: "NotCreated\n",
       },
       // 促音
       {
         text: "っ",
-
         unicode: "\u3063",
         art: "NotCreated\n",
       },
@@ -115,7 +111,6 @@ export const data: Lib[] = [
       // 清音
       {
         text: "ア",
-
         unicode: "\u30a2",
         art: "┏━━━━┓\n┗━━━┓┃\n　　┏┓┃┃\n　　┃┃┗┛\n　┏┛┛　　\n　┗┛　　　\n",
       },
@@ -126,206 +121,171 @@ export const data: Lib[] = [
       },
       {
         text: "ウ",
-
         unicode: "\u30a6",
         art: "　　┏┓　　\n┏━┛┗━┓\n┃┏━━┓┃\n┗┛　　┃┃\n　　　┏┛┃\n　　　┗━┛\n　\n",
       },
       {
         text: "エ",
-
         unicode: "\u30a8",
         art: "┏━━━━┓\n┗━┓┏━┛\n　　┃┃　　\n　　┃┃　　\n┏━┛┗━┓\n┗━━━━┛\n",
       },
       {
         text: "オ",
-
         unicode: "\u30aa",
         art: "　　　┏┓　\n┏━━┛┗┓\n┗━┓　┏┛\n　┏┛┃┃　\n┏┛┛┃┃　\n┗┛　┗┛　\n",
       },
       {
         text: "カ",
-
         unicode: "\u30ab",
         art: "　┏┓　　　\n┏┛┗━━┓\n┗┓┏━┓┃\n　┃┃　┃┃\n┏┛┛┏┛┃\n┗┛　┗━┛\n",
       },
       {
         text: "キ",
-
         unicode: "\u30ad",
         art: "　　┏┓　　\n┏━┛┗━┓\n┗━┓┏━┛\n┏━┛┗━┓\n┗━┓┏━┛\n　　┗┛　　\n",
       },
       {
         text: "ク",
-
         unicode: "\u30af",
         art: "┏┓　　　\n┃┗━━┓\n┃┏━┓┃\n┗┛　┃┃\n　　┏┛┃\n　　┗━┛\n",
       },
       {
         text: "ケ",
-
         unicode: "\u30b1",
         art: "┏┓　　　　　\n┃┗━━━┓　\n┃┏━┓┏┛　\n┗┛　┃┃　　\n　　　┃┃　　\n　　　┗┛　　\n",
       },
       {
         text: "コ",
-
         unicode: "\u30b3",
-        // art: "┏━━━━┓\n┗━━━┓┃\n　　　　┃┃\n　　　　┃┃\n┏━━━┛┃\n┗━━━━┛\n",
         art: "　　　　　　\n┏━━━━┓\n┗━━━┓┃\n　　　　┃┃\n┏━━━┛┃\n┗━━━━┛\n",
       },
       {
         text: "サ",
-
         unicode: "\u30b5",
         art: "　┏┓┏┓　\n┏┛┗┛┗┓\n┗┓┏┓┏┛\n　┃┃┃┃　\n　┗┛┃┃　\n　　　┗┛　\n",
       },
       {
         text: "シ",
-
         unicode: "\u30b7",
         art: "　　　　┏┓\n┏━━┓┃┃\n┣━━┫┃┃\n┗━━┛┃┃\n┏━━━┛┃\n┗━━━━┛\n",
       },
       {
         text: "ス",
-
         unicode: "\u30b9",
         art: "┏━━━━┓\n┗━━┓　┃\n　　┏┛┏　\n　┏┛┳┗┓\n┏┛┛┗┓┃\n┗┛　　┗┛\n",
       },
       {
         text: "セ",
-
         unicode: "\u30bb",
         art: "　┏┓　　　\n┏┛┗━━┓\n┗┓┏━┓┃\n　┃┃　┗┛\n　┃┗━━┓\n　┗━━━┛\n",
       },
       {
         text: "ソ",
-
         unicode: "\u30bd",
         art: "┏┓　　┏┓\n┗┗┓　┃┃\n　┗┛　┃┃\n　　　┏┛┛\n　┏━┛┛　\n　┗━┛　　\n",
       },
       {
         text: "タ",
-
         unicode: "\u30bf",
         art: "┏━━━━┓\n┃┏━━┓┃\n┃┃┏━┛┃\n┗┛┗━┓┃\n　　　┏┛┃\n　　　┗━┛\n",
       },
       {
         text: "チ",
-
         unicode: "\u30c1",
         art: "　┏━━┓　\n　┗┓┏┛　\n┏━┛┗━┓\n┗━┓┏━┛\n　┏┛┛　　\n　┗┛　　　\n",
       },
       {
         text: "ツ",
-
         unicode: "\u30c4",
         art: "┏┓┏┓┏┓\n┃┃┃┃┃┃\n┃┃┃┃┃┃\n┗┛┗┛┃┃\n┏━━━┛┃\n┗━━━━┛\n",
       },
       {
         text: "テ",
-
         unicode: "\u30c6",
         art: "　┏━━┓　\n　┗━━┛　\n┏━━━━┓\n┗━┓┏━┛\n　┏┛┛　　\n　┗┛　　　\n",
       },
       {
         text: "ト",
-
         unicode: "\u30c8",
         art: "　┏━┓　　\n　┃　┃　　\n　┃　┗━┓\n　┃　┏━┛\n　┃　┃　　\n　┗━┛　　\n",
       },
       {
         text: "ナ",
-
         unicode: "\u30ca",
         art: "　　┏┓　　\n┏━┛┗━┓\n┗━┓┏━┛\n　　┃┃　　\n　┏┛┛　　\n　┗┛　　　\n",
       },
       {
         text: "ニ",
-
         unicode: "\u30cb",
         art: "　　　　　　\n　┏━━┓　\n　┗━━┛　\n　　　　　　\n┏━━━━┓\n┗━━━━┛\n",
       },
       {
         text: "ヌ",
-
         unicode: "\u30cc",
         art: "┏━━━━┓\n┗━━┓　┃\n　┏━┛┏┛\n　┗┳　┗┓\n┏━┛┗┓┃\n┗━┛　┗┛\n",
       },
       {
         text: "ネ",
-
         unicode: "\u30cd",
         art: "　　┏┓　　\n┏━┛┗━┓\n┗━━┓┏┛\n　┏┛┏╋┓\n┏┛┫┃┗┛\n┗┛┗┛　　\n",
       },
       {
         text: "ノ",
-
         unicode: "\u30ce",
         art: "　　┏┓　　\n　　┃┃　　\n　　┃┃　　\n　┏┛┛　　\n┏┛┛　　　\n┗┛　　　　\n",
       },
       {
         text: "ハ",
-
         unicode: "\u30cf",
         art: "　┏┓┏┓　\n　┃┃┃┃　\n　┃┃┃┃　\n　┃┃┃┗┓\n┏┛┛┗┓┃\n┗┛　　┗┛\n",
       },
       {
         text: "ヒ",
-
         unicode: "\u30d2",
         art: "┏┓　　　　\n┃┃　　　　\n┃┗━━━┓\n┃┏━━━┛\n┃┗━━━┓\n┗━━━━┛\n",
       },
       {
         text: "フ",
-
         unicode: "\u30d5",
         art: "┏━━━━┓\n┗━━━┓┃\n　　　┏┛┛\n　　┏┛┛　\n　┏┛┛　　\n　┗┛　　　\n",
       },
       {
         text: "ヘ",
-
         unicode: "\u30d8",
         art: "　　　　　　\n　┏━┓　　\n┏┛━┗┓　\n┃┃　┗┗┓\n┗┛　　┃┃\n　　　　┗┛\n",
       },
       {
         text: "ホ",
-
         unicode: "\u30db",
         art: "　　┏┓　　\n┏━┛┗━┓\n┗━┓┏━┛\n┏┓┃┃┏┓\n┃┃┃┃┃┃\n┗┛┗┛┗┛\n",
       },
       {
         text: "マ",
-
         unicode: "\u30de",
         art: "┏━━━━┓\n┗━━━┓┃\n　┏┓　┃┃\n　┃┗━┛┃\n　┃┏━━┛\n　┗┛　　　\n",
       },
       {
         text: "ミ",
-
         unicode: "\u30df",
         art: "┏━━━━┓\n┗━━━━┛\n┏━━━━┓\n┗━━━━┛\n┏━━━━┓\n┗━━━━┛\n",
       },
       {
         text: "ム",
-
         unicode: "\u30e0",
         art: "┏┓　　　　\n┃┃　　　　\n┃┃　　┏┓\n┃┗━━┛┃\n┗━━━┓┃\n　　　　┗┛\n",
       },
       {
         text: "メ",
-
         unicode: "\u30e1",
         art: "　　　　　　\n　┏┓　┏┓\n　┗┓━┏┛\n　┏┛━┗┓\n┏┛┛　┗┛\n┗┛　　　　\n",
       },
       {
         text: "モ",
-
         unicode: "\u30e2",
         art: "┏━━━━┓\n┗━┓┏━┛\n┏━┛┗━┓\n┗━┓┏━┛\n　　┃┗━┓\n　　┗━━┛\n",
       },
       {
         text: "ヤ",
-
         unicode: "\u30e4",
         art: "　┏┓　　　\n┏┛┗━━┓\n┗┓┏━┓┃\n　┃┃　┗┛\n　┃┃　　　\n　┗┛　　　\n",
       },
@@ -337,252 +297,211 @@ export const data: Lib[] = [
       },
       {
         text: "ヨ",
-
         unicode: "\u30e8",
         art: "┏━━━━┓\n┗━━━┓┃\n┏━━━┛┃\n┗━━━┓┃\n┏━━━┛┃\n┗━━━━┛\n",
       },
       {
         text: "ラ",
-
         unicode: "\u30e9",
         art: "　┏━━┓　\n　┗━━┛　\n┏━━━━┓\n┗━━━┓┃\n　┏━━┛┛\n　┗━━┛　\n",
       },
       {
         text: "リ",
-
         unicode: "\u30ea",
         art: "　┏┓　┏┓\n　┃┃　┃┃\n　┃┃　┃┃\n　┗┛　┃┃\n　　┏━┛┃\n　　┗━━┛\n",
       },
       {
         text: "ル",
-
         unicode: "\u30eb",
         art: "　　　┏┓　　\n　┏┓┃┃　　\n　┃┃┃┃　　\n　┃┃┃┃　　\n┏┛┛┃┗┓　\n┗┛　┗━┛　\n",
       },
       {
         text: "レ",
-
         unicode: "\u30ec",
         art: "┏┓　　　　\n┃┃　　　　\n┃┃　　┏┓\n┃┃　┏┏┛\n┃┗━┏┛　\n┗━━┛　　\n",
       },
       {
         text: "ロ",
-
         unicode: "\u30ed",
         art: "┏━━━━┓\n┃┏━━┓┃\n┃┃　　┃┃\n┃┃　　┃┃\n┃┗━━┛┃\n┗━━━━┛\n",
       },
       {
         text: "ワ",
-
         unicode: "\u30ef",
         art: "┏━━━━┓\n┃┏━━┓┃\n┗┛　　┃┃\n　　　　┃┃\n　　　┏┛┃\n　　　┗━┛\n",
       },
       {
         text: "ヲ",
-
         unicode: "\u30f2",
         art: "┏━━━━┓\n┗━━━┓┃\n┏━━━┛┃\n┗━━━┓┃\n　　┏━┛┛\n　　┗━┛　\n",
       },
       {
         text: "ン",
-
         unicode: "\u30f3",
         art: "　　　　┏┓\n┏━━┓┃┃\n┗━━┛┃┃\n　　　　┃┃\n┏━━━┛┃\n┗━━━━┛\n",
       },
       // 濁音
       {
         text: "ガ",
-
         unicode: "\u30ac",
         art: "　┏┓┏┳┓\n┏┛┗┗┻┫\n┗┓┏━┓┃\n　┃┃　┃┃\n┏┛┛┏┛┃\n┗┛　┗━┛\n",
       },
       {
         text: "ギ",
-
         unicode: "\u30ae",
         art: "　　┏┳┳┓\n┏━┛┗┻┫\n┗━┓┏━┛\n┏━┛┗━┓\n┗━┓┏━┛\n　　┗┛　　\n",
       },
       {
         text: "グ",
-
         unicode: "\u30b0",
         art: "┏┓　┏┳┓\n┃┗━┗╋┛\n┃┏━┓┃　\n┗┛　┃┃　\n　　┏┛┃　\n　　┗━┛　\n",
       },
       {
         text: "ゲ",
-
         unicode: "\u30b2",
         art: "┏┓　┏┳┓\n┃┗━┗┻┫\n┃┏━┓┏┛\n┗┛　┃┃　\n　　　┃┃　\n　　　┗┛　\n",
       },
       {
         text: "ゴ",
-
         unicode: "\u30b4",
         art: "　　　┏┳┓\n┏━━┗┻┫\n┗━━━┓┃\n　　　　┃┃\n┏━━━┛┃\n┗━━━━┛\n",
       },
       {
         text: "ザ",
-
         unicode: "\u30b6",
         art: "　　　┏┳┓\n　┏┓┣╋┛\n┏┛┗┛┗┓\n┗┓┏┓┏┛\n　┗┛┃┃　\n　　　┗┛　\n",
       },
       {
         text: "ジ",
-
         unicode: "\u30b8",
         art: "　　　┏┳┓\n┏━━┗┻┫\n┣━━┫┃┃\n┗━━┛┃┃\n┏━━━┛┃\n┗━━━━┛\n",
       },
       {
         text: "ズ",
-
         unicode: "\u30ba",
         art: "┏━━┏┳┓\n┗━━┓┻┫\n　　┏┛┏　\n　┏┛┳┗┓\n┏┛┛┗┓┃\n┗┛　　┗┛\n",
       },
       {
         text: "ゼ",
-
         unicode: "\u30bc",
         art: "　┏┓┏┳┓\n┏┛┗┗┻┫\n┗┓┏━┓┃\n　┃┃　┗┛\n　┃┗━━┓\n　┗━━━┛\n",
       },
       {
         text: "ゾ",
-
         unicode: "\u30be",
         art: "┏┓　┏┳┓\n┗┗┓┗┻┫\n　┗┛　┃┃\n　　　┏┛┛\n　┏━┛┛　\n　┗━┛　　\n",
       },
       {
         text: "ダ",
-
         unicode: "\u30c0",
         art: "┏━━┏┳┓\n┃┏━━┻┫\n┃┃┏━┛┃\n┗┛┗━┓┃\n　　　┏┛┃\n　　　┗━┛\n",
       },
       {
         text: "ヂ",
-
         unicode: "\u30c2",
         art: "　┏━┏┳┓　\n　┗┓┗┻┛\n┏━┛┗━┓\n┗━┓┏━┛\n　┏┛┛　　\n　┗┛　　　\n",
       },
       {
         text: "ヅ",
-
         unicode: "\u30c5",
         art: "　　　┏┳┓\n┏┓┏┗┻┫\n┃┃┃┃┃┃\n┗┛┗┛┃┃\n┏━━━┛┃\n┗━━━━┛\n",
       },
       {
         text: "デ",
-
         unicode: "\u30c7",
         art: "　┏━┏┳┓\n　┗━┗┻┛\n┏━━━━┓\n┗━┓┏━┛\n　┏┛┛　　\n　┗┛　　　\n",
       },
       {
         text: "ド",
-
         unicode: "\u30c9",
         art: "　┏━┳┳┓\n　┃　┣┻┛\n　┃　┗━┓\n　┃　┏━┛\n　┃　┃　　\n　┗━┛　　\n",
       },
       {
         text: "バ",
-
         unicode: "\u30D0",
         art: "　　　┏┳┓\n　┏┓┣╋┛\n　┃┃┃┃　\n　┃┃┃┗┓\n┏┛┛┗┓┃\n┗┛　　┗┛\n",
       },
       {
         text: "ビ",
-
         unicode: "\u30D3",
         art: "┏┓　┏┳┓\n┃┃　┗┻┛\n┃┗━━━┓\n┃┏━━━┛\n┃┗━━━┓\n┗━━━━┛\n",
       },
       {
         text: "ブ",
-
         unicode: "\u30D6",
         art: "　　　┏┳┓\n┏━━┻┻┫\n┗━━━┓┃\n　　　┏┛┛\n　　┏┛┛　\n　　┗┛　　\n",
       },
       {
         text: "ベ",
-
         unicode: "\u30D9",
         art: "　　　┏┳┓\n　┏━╋┻┛\n┏┛━┗┓　\n┃┃　┗┗┓\n┗┛　　┃┃\n　　　　┗┛\n",
       },
       {
         text: "ボ",
-
         unicode: "\u30DC",
         art: "　　┏┳┳┓\n┏━┛┗┻┫\n┗━┓┏━┛\n┏┓┃┃┏┓\n┃┃┃┃┃┃\n┗┛┗┛┗┛\n",
       },
       // 半濁音
       {
         text: "パ",
-
         unicode: "\u30D1",
         art: "　　　　┏┓\n　┏┓┏┗┛\n　┃┃┃┃　\n　┃┃┃┗┓\n┏┛┛┗┓┃\n┗┛　　┗┛\n",
       },
       {
         text: "ピ",
-
         unicode: "\u30D4",
         art: "┏┓　　┏┓\n┃┃　　┗┛\n┃┗━━━┓\n┃┏━━━┛\n┃┗━━━┓\n┗━━━━┛\n",
       },
       {
         text: "プ",
-
         unicode: "\u30D7",
         art: "　　　　┏┓\n┏━━━┗┛\n┗━━━┓┃\n　　　┏┛┛\n　　┏┛┛　\n　　┗┛　　　\n",
       },
       {
         text: "ペ",
-
         unicode: "\u30DA",
         art: "　　　　┏┓\n　┏━┓┗┛\n┏┛━┗┓　\n┃┃　┗┗┓\n┗┛　　┃┃\n　　　┗┛\n",
       },
       {
         text: "ポ",
-
         unicode: "\u30DD",
         art: "　　┏┓┏┓\n┏━┛┗┗┛\n┗━┓┏━┛\n┏┓┃┃┏┓\n┃┃┃┃┃┃\n┗┛┗┛┗┛\n",
       },
       // 小文字
       {
         text: "ァ",
-
         unicode: "\u30a1",
         art: "　┏━━━┓\n　┗━━┓┃\n　　┏┓┗┛\n　　┃┃　　\n　　┗┛　　\n",
       },
       {
         text: "ィ",
-
         unicode: "\u30a3",
         art: "　　　　　　\n 　　　　　┏┓\n┏━┛┃\n┗┓┏┛\n    ┃┃   \n    ┗┛   \n",
       },
       {
         text: "ェ",
-
         unicode: "\u30a7",
         art: "　　　　　\n　　　　　\n　┏━━┓\n　┗┓┏┛\n　┏┛┗┓\n　┗━━┛\n",
       },
       // 拗音
       {
         text: "ャ",
-
         unicode: "\u30e3",
         art: "　　　　　　\n　　┏┓　　\n　┏┛┗━┓\n　┗┓┏┓┃\n　　┃┃┗┛\n　　┗┛　　\n",
       },
       {
         text: "ュ",
-
         unicode: "\u30e5",
         art: "　　　　　　\n　　┏━┓　\n　　┗┓┃　\n　　┏┛┗┓\n　　┗━━┛\n",
       },
       {
         text: "ョ",
-
         unicode: "\u30e7",
         art: "　　　　　　\n　　┏━━┓\n　　┣━　┃\n　　┣━　┃\n　　┗━━┛\n",
       },
       // 促音
       {
         text: "ッ",
-
         unicode: "\u30C3",
         art: "　　　　　　\n　　　　　　\n　┏┳┓┏┓\n　┗┻┛┃┃\n　┏━━┛┃\n　┗━━━┛\n",
       },
@@ -1110,7 +1029,12 @@ export const data: Lib[] = [
       {
         text: "ー",
         unicode: "\u30fc",
-        art: "　┏━┓　　\n　┃　┃　　\n　┃　┃　　\n　┃　┃　　\n　┗━┛　　\n",
+        art: "　┏┓　　\n　┃┃　　\n　┃┃　　\n　┃┃　　\n　┃┃　　\n　┗┛　　\n",
+      },
+      {
+        text: "!",
+        unicode: "\u0021",
+        art: "　　┏┓　　\n　　┃┃　　\n　　┃┃　　\n　　┗┛　　\n　　┏┓　　\n　　┗┛　　\n",
       },
       {
         text: "！",
@@ -1118,9 +1042,9 @@ export const data: Lib[] = [
         art: "　　┏┓　　\n　　┃┃　　\n　　┃┃　　\n　　┗┛　　\n　　┏┓　　\n　　┗┛　　\n",
       },
       {
-        text: "!",
-        unicode: "!",
-        art: "　　┏┓　　\n　　┃┃　　\n　　┃┃　　\n　　┗┛　　\n　　┏┓　　\n　　┗┛　　\n",
+        text: "?",
+        unicode: "\u003F",
+        art: "　　┏┓　　\n　　┃┃　　\n　　┃┃　　\n　　┃┃　　\n　　┗┛　　\n",
       },
       {
         text: "？",
@@ -1128,9 +1052,24 @@ export const data: Lib[] = [
         art: "　　┏┓　　\n　　┃┃　　\n　　┃┃　　\n　　┃┃　　\n　　┗┛　　\n",
       },
       {
-        text: "?",
-        unicode: "?",
-        art: "　　┏┓　　\n　　┃┃　　\n　　┃┃　　\n　　┃┃　　\n　　┗┛　　\n",
+        text: "(",
+        unicode: "\u0028",
+        art: "　　┏┓　\n　／／　　\n┃┃　　　\n┃┃　　　\n　＼＼　　\n　　┗┛　\n",
+      },
+      {
+        text: ")",
+        unicode: "\u0029",
+        art: "┏┓　　　\n　＼＼　　\n　　┃┃　\n　　┃┃　\n　／／　　\n┗┛　　　\n",
+      },
+      {
+        text: "（",
+        unicode: "\uFF08",
+        art: "　　┏┓　\n　／／　　\n┃┃　　　\n┃┃　　　\n　＼＼　　\n　　┗┛　\n",
+      },
+      {
+        text: "）",
+        unicode: "\uFF09",
+        art: "┏┓　　　\n　＼＼　　\n　　┃┃　\n　　┃┃　\n　／／　　\n┗┛　　　\n",
       },
     ],
   },

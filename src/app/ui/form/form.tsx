@@ -21,14 +21,16 @@ export default function Form() {
   } = useForm<Inputs>();
 
   // 変換結果のState
-  const [result, setResult] = useState("");
+  const [result, setResult] = useState(
+    ".\n　┏━┏┳┓　┏┓　　　┏━━━━┓　　　┏┳┓　　┏┓　　\n　┗━┗┻┛┏┛┗━━┓┗━┓┏━┛┏━━┗┻┫　　┃┃　　\n┏━━━━┓┗┓┏━┓┃┏━┛┗━┓┣━━┫┃┃　　┃┃　　\n┗━┓┏━┛　┃┃　┃┃┗━┓┏━┛┗━━┛┃┃　　┗┛　　\n　┏┛┛　　┏┛┛┏┛┃　　┃┗━┓┏━━━┛┃　　┏┓　　\n　┗┛　　　┗┛　┗━┛　　┗━━┛┗━━━━┛　　┗┛　　\n"
+  );
 
   const submitRef = useRef<HTMLInputElement>(null);
 
   // バリデーション関数
   const validateInput = (value: string) => {
     // ひらがな、カタカナ、アルファベット、特定の記号のみを許可する正規表現
-    const regex = /^[ぁ-んァ-ンA-Za-z！!？?ー\-♡]+$/;
+    const regex = /^[ぁ-んァ-ンA-Za-z！!？?ー\-♡()（）]+$/;
     return (
       regex.test(value) ||
       "ひらがな、カタカナ、アルファベット、特定の記号以外が含まれています。"
@@ -183,7 +185,8 @@ export default function Form() {
         {/* 入力エリア */}
         <div>
           <input
-            placeholder="ここに文字を入力"
+            style={{ width: "100%" }}
+            placeholder="例：ア　A　1　!　?　(　)・　♡"
             {...register("inputArea", {
               required: "入力してください！",
               validate: validateInput,
@@ -210,58 +213,6 @@ export default function Form() {
             ))}
           </div>
         </div>
-        {/* チェックボックス・「ランダム作成する」 */}
-        <div>
-          <label>
-            <input type="checkbox" onChange={(e) => handleUseRandom(e)} />
-            ランダム生成
-          </label>
-          {/* チェックボックス・ひらがな */}
-          {/* <label>
-            <input
-              type="checkbox"
-              name="demoCheckbox"
-              checked={useHiragana}
-              onChange={(e) => setUseHiragana(e.target.checked)}
-              disabled={true}
-            />
-            ひらがな（未対応）
-          </label> */}
-          {/* チェックボックス・カタカナ */}
-          <label>
-            <input
-              type="checkbox"
-              name="demoCheckbox"
-              checked={useKatakana}
-              onChange={(e) => setUseKatakana(e.target.checked)}
-              disabled={!useRandom}
-            />
-            カタカナ
-          </label>
-          {/* チェックボックス・アルファベット */}
-          <label>
-            <input
-              type="checkbox"
-              name="demoCheckbox"
-              checked={useAlphabet}
-              onChange={(e) => setUseAlphabet(e.target.checked)}
-              disabled={!useRandom}
-            />
-            アルファベット
-          </label>
-          {/* チェックボックス・記号 */}
-          <label>
-            <input
-              type="checkbox"
-              name="demoCheckbox"
-              checked={useMark}
-              onChange={(e) => setUseMark(e.target.checked)}
-              disabled={!useRandom}
-            />
-            記号
-          </label>
-        </div>
-
         {/* 生成ボタン */}
         <div>
           {submitButtons.map((button: SubmitButton) => (
@@ -283,7 +234,8 @@ export default function Form() {
       {/* 結果 */}
       <div>
         <textarea
-          className={styles.result}
+          // className={styles.result}
+          style={{ width: "100%" }}
           cols={58}
           rows={15}
           name=""
