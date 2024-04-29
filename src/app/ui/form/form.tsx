@@ -1,6 +1,6 @@
 "use client";
 
-import { data } from "@/app/lib/data";
+import { data } from "@/app/lib/data_twitter";
 import {
   Inputs,
   Letter,
