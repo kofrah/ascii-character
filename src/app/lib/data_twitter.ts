@@ -172,7 +172,7 @@ export const data: Lib[] = [
       {
         text: "ス",
         unicode: "\u30b9",
-        art: "┏━━━━┓\n┗━━┓　┃\n　　┏┛┏　\n　┏┛┳┗┓\n┏┛┛┗┓┃\n┗┛　　┗┛\n",
+        art: "　　　　　　\n┏━━━━┓\n┗━━┓　┃\n　　／　／　\n　／／＼＼　\n┗┛　　┗┛\n",
       },
       {
         text: "セ",
@@ -308,7 +308,7 @@ export const data: Lib[] = [
       {
         text: "リ",
         unicode: "\u30ea",
-        art: "　┏┓　┏┓\n　┃┃　┃┃\n　┃┃　┃┃\n　┗┛　┃┃\n　　┏━┛┃\n　　┗━━┛\n",
+        art: "　┏┓┏┓\n　┃┃┃┃\n　┃┃┃┃\n　┗┛┃┃\n　┏━┛┃\n　┗━━┛\n",
       },
       {
         text: "ル",
@@ -323,7 +323,7 @@ export const data: Lib[] = [
       {
         text: "ロ",
         unicode: "\u30ed",
-        art: "┏━━━━┓\n┃┏━━┓┃\n┃┃　　┃┃\n┃┃　　┃┃\n┃┗━━┛┃\n┗━━━━┛\n",
+        art: "　　　　　　\n┏━━━━┓\n┃┏━━┓┃\n┃┃　　┃┃\n┃┗━━┛┃\n┗━━━━┛\n",
       },
       {
         text: "ワ",
@@ -379,7 +379,7 @@ export const data: Lib[] = [
       {
         text: "ズ",
         unicode: "\u30ba",
-        art: "┏━━┏┳┓\n┗━━┓┻┫\n　　┏┛┏　\n　┏┛┳┗┓\n┏┛┛┗┓┃\n┗┛　　┗┛\n",
+        art: "　　　┏┳┓\n┏━━┻┻┫\n┗━━┓　┃\n　　／　／　\n　／／＼＼　\n┗┛　　┗┛\n",
       },
       {
         text: "ゼ",
@@ -523,7 +523,7 @@ export const data: Lib[] = [
         text: "イ",
 
         unicode: "\u30a4",
-        art: "           ┌┐\n┌───┘│\n└─┐┌─┘\n      ││     \n     └┘      \n",
+        art: "           ┌┐\n┌───┘│\n└─┐┌─┘\n      ┃┃     \n     └┘      \n",
       },
       {
         text: "ウ",
@@ -535,13 +535,13 @@ export const data: Lib[] = [
         text: "エ",
 
         unicode: "\u30a8",
-        art: "┌────┐\n└─┐┌─┘\n      ││     \n┌─┘└─┐\n└────┘\n",
+        art: "┌────┐\n└─┐┌─┘\n      ┃┃     \n┌─┘└─┐\n└────┘\n",
       },
       {
         text: "オ",
 
         unicode: "\u30aa",
-        art: "        ┌┐  \n┌──┘└┐\n└─┐   ┌┘\n    / / ││   \n  └┘ └┘   \n",
+        art: "        　┌┐  \n┌──┘└┐\n└─┐   ┌┘\n    / /  ┃┃   \n  └┘ └┘   \n",
       },
       {
         text: "カ",
@@ -565,31 +565,31 @@ export const data: Lib[] = [
         text: "ケ",
 
         unicode: "\u30b1",
-        art: "┌┐          \n│└───┐\n│┌─┐┌┘\n└┘   ││   \n        └┘   \n",
+        art: "┌┐          \n│└───┐\n│┌─┐┌┘\n└┘   ┃┃   \n        └┘   \n",
       },
       {
         text: "コ",
 
         unicode: "\u30b3",
-        art: "┌────┐\n└───┐│\n           ││\n┌───┘│\n└────┘\n",
+        art: "┌────┐\n└───┐│\n           ┃┃\n┌───┘│\n└────┘\n",
       },
       {
         text: "サ",
 
         unicode: "\u30b5",
-        art: "   ┌┐┌┐  \n┌┘└┘└┐\n└┐┌┐┌┘\n   └┘││   \n        └┘   \n",
+        art: "   ┌┐┌┐  \n┌┘└┘└┐\n└┐┌┐┌┘\n   └┘┃┃   \n        └┘   \n",
       },
       {
         text: "シ",
 
         unicode: "\u30b7",
-        art: "┌──┐┌┐\n├──┤ ││\n└──┘ ││\n┌───┘│\n└────┘\n",
+        art: "┌──┐┌┐\n├──┤ ┃┃\n└──┘ ┃┃\n┌───┘│\n└────┘\n",
       },
       {
         text: "ス",
 
         unicode: "\u30b9",
-        art: "┌────┐\n└──┐┌┘\n      / / │   \n    / /  ││ \n └┘    └┘\n",
+        art: "┌────┐\n└──┐┌┘\n      / / │   \n    / /  ┃┃ \n └┘    └┘\n",
       },
       {
         text: "セ",
@@ -601,7 +601,7 @@ export const data: Lib[] = [
         text: "ソ",
 
         unicode: "\u30bd",
-        art: "┌┐    ┌┐\n└ │   ││ \n └┘  ││  \n    ┌┘ │  \n    └─┘   \n",
+        art: "┌┐    ┌┐\n└ │   ┃┃ \n └┘  ┃┃  \n    ┌┘ │  \n    └─┘   \n",
       },
       {
         text: "タ",
@@ -619,7 +619,7 @@ export const data: Lib[] = [
         text: "ツ",
 
         unicode: "\u30c4",
-        art: "┌┐┌┐┌┐\n ││││││ \n└┘└┘││ \n┌───┘│\n└────┘\n",
+        art: "┌┐┌┐┌┐\n ┃┃┃┃┃┃ \n└┘└┘┃┃ \n┌───┘│\n└────┘\n",
       },
       {
         text: "テ",
@@ -637,7 +637,7 @@ export const data: Lib[] = [
         text: "ナ",
 
         unicode: "\u30ca",
-        art: "      ┌┐      \n┌─┘└─┐\n└─┐┌─┘\n ┌┘┘       \n └┘         \n",
+        art: "　　┌┐      \n┌─┘└─┐\n└─┐┌─┘\n　┌┘┘       \n　└┘         \n",
       },
       {
         text: "ニ",
@@ -661,13 +661,13 @@ export const data: Lib[] = [
         text: "ノ",
 
         unicode: "\u30ce",
-        art: "       ┌┐  \n       ││   \n   ┌┘┘   \n┌┘┘      \n└┘        \n",
+        art: "       ┌┐  \n       ┃┃   \n   ┌┘┘   \n┌┘┘      \n└┘        \n",
       },
       {
         text: "ハ",
 
         unicode: "\u30cf",
-        art: "               \n  ┌┐┌┐  \n  ││ │└┐\n┌┘┘└┐│\n└┘     └┘ \n",
+        art: "               \n  ┌┐┌┐  \n  ┃┃ │└┐\n┌┘┘└┐│\n└┘     └┘ \n",
       },
       {
         text: "ヒ",
@@ -691,7 +691,7 @@ export const data: Lib[] = [
         text: "ホ",
 
         unicode: "\u30db",
-        art: "     ┌┐      \n┌─┘└─┐\n└─┐┌─┘\n┌┐││┌┐\n└┘└┘└┘\n",
+        art: "     ┌┐      \n┌─┘└─┐\n└─┐┌─┘\n┌┐┃┃┌┐\n└┘└┘└┘\n",
       },
       {
         text: "マ",
@@ -727,13 +727,13 @@ export const data: Lib[] = [
         text: "ヤ",
 
         unicode: "\u30e4",
-        art: "   ┌┐        \n┌┘└──┐\n└┐┌─┐│\n    ││ └┘ \n    └┘      \n",
+        art: "   ┌┐        \n┌┘└──┐\n└┐┌─┐│\n    ┃┃ └┘ \n    └┘      \n",
       },
       {
         text: "ユ",
 
         unicode: "\u30e6",
-        art: "  ┌──┐    \n  └─┐│    \n        ││   \n┌──┘└┐\n└────┘ \n",
+        art: "  ┌──┐    \n  └─┐│    \n        ┃┃   \n┌──┘└┐\n└────┘ \n",
       },
       {
         text: "ヨ",
@@ -751,31 +751,31 @@ export const data: Lib[] = [
         text: "リ",
 
         unicode: "\u30ea",
-        art: "┌┐  ┌┐ \n││  ││ \n └┘ ││  \n       ││  \n      └┘   \n",
+        art: "┌┐  ┌┐ \n┃┃  ┃┃ \n └┘ ┃┃  \n       ┃┃  \n      └┘   \n",
       },
       {
         text: "ル",
 
         unicode: "\u30eb",
-        art: "        ┌┐    \n   ┌┐││    \n   ││ ││    \n┌┘┘ │└┐ \n└┘    └─┘ \n",
+        art: "        ┌┐    \n   ┌┐┃┃    \n   ┃┃ ┃┃    \n┌┘┘ │└┐ \n└┘    └─┘ \n",
       },
       {
         text: "レ",
 
         unicode: "\u30ec",
-        art: "  ┌┐          \n   ││    ┌┐\n   ││   / /   \n   │└┘/     \n   └─┘      \n",
+        art: "  ┌┐          \n   ┃┃    ┌┐\n   ┃┃   / /   \n   │└┘/     \n   └─┘      \n",
       },
       {
         text: "ロ",
 
         unicode: "\u30ed",
-        art: "┌────┐\n│┌──┐│\n││      ││\n│└──┘│\n└────┘\n",
+        art: "┌────┐\n│┌──┐│\n┃┃      ┃┃\n│└──┘│\n└────┘\n",
       },
       {
         text: "ワ",
 
         unicode: "\u30ef",
-        art: "┌────┐\n│┌──┐│\n└┘    ││  \n     ┌┘│   \n    └─┘    \n",
+        art: "┌────┐\n│┌──┐│\n└┘    ┃┃  \n     ┌┘│   \n    └─┘    \n",
       },
       {
         text: "ヲ",
@@ -787,7 +787,7 @@ export const data: Lib[] = [
         text: "ン",
 
         unicode: "\u30f3",
-        art: "         ┌┐\n┌──┐││\n└──┘││\n┌───┘│\n└────┘\n",
+        art: "　　　　┌┐\n┌──┐┃┃\n└──┘┃┃\n┌───┘│\n└────┘\n",
       },
       // 濁音
       {
@@ -812,7 +812,7 @@ export const data: Lib[] = [
         text: "ゲ",
 
         unicode: "\u30b2",
-        art: "┌┐ ┌┬┐\n│└─└┴┤\n│┌─┐┌┘\n└┘   ││   \n        └┘   \n",
+        art: "┌┐ ┌┬┐\n│└─└┴┤\n│┌─┐┌┘\n└┘   ┃┃   \n        └┘   \n",
       },
       {
         text: "ゴ",
@@ -824,13 +824,13 @@ export const data: Lib[] = [
         text: "ザ",
 
         unicode: "\u30b6",
-        art: "   ┌┐┌┬┐\n┌┘└┘┴┤\n└┐┌┐┌┘\n   └┘││   \n        └┘   \n",
+        art: "   ┌┐┌┬┐\n┌┘└┘┴┤\n└┐┌┐┌┘\n   └┘┃┃   \n        └┘   \n",
       },
       {
         text: "ジ",
 
         unicode: "\u30b8",
-        art: "┌──┌┬┐\n├──└┴┤\n└──┘││\n┌───┘│\n└────┘\n",
+        art: "┌──┌┬┐\n├──└┴┤\n└──┘┃┃\n┌───┘│\n└────┘\n",
       },
       {
         text: "ズ",
@@ -848,7 +848,7 @@ export const data: Lib[] = [
         text: "ゾ",
 
         unicode: "\u30be",
-        art: "┌┐ ┌┬┐\n└ │└┼┤ \n └┘  ││  \n    ┌┘ │  \n    └─┘   \n",
+        art: "┌┐ ┌┬┐\n└ │└┼┤ \n └┘  ┃┃  \n    ┌┘ │  \n    └─┘   \n",
       },
       {
         text: "ダ",
@@ -866,7 +866,7 @@ export const data: Lib[] = [
         text: "ヅ",
 
         unicode: "\u30c5",
-        art: "　　 ┌┬┐\n┌┐┌└┼┤\n└┘└┘││ \n┌───┘│\n└────┘\n",
+        art: "　　 ┌┬┐\n┌┐┌└┼┤\n└┘└┘┃┃ \n┌───┘│\n└────┘\n",
       },
       {
         text: "デ",
@@ -882,31 +882,26 @@ export const data: Lib[] = [
       },
       {
         text: "バ",
-
         unicode: "\u30D0",
-        art: "       ┌┬┐\n  ┌┐├┼┘\n  ││ │└┐\n┌┘┘└┐│\n└┘     └┘ \n",
+        art: "       ┌┬┐\n  ┌┐├┼┘\n  ┃┃ │└┐\n┌┘┘└┐│\n└┘     └┘ \n",
       },
       {
         text: "ビ",
-
         unicode: "\u30D3",
         art: "┌┐ ┌┬┐ \n│└─└┴┘\n│┌───┘\n│└───┐\n└────┘\n",
       },
       {
         text: "ブ",
-
         unicode: "\u30D6",
         art: "　 　┌┬┐\n┌──┴┴┤\n└───┐│\n　　　/ /\n　　└┘　\n",
       },
       {
         text: "ベ",
-
         unicode: "\u30D9",
         art: "　　　┌┬┐\n　┌─┼┴┘ \n  / /　 \\ \\ 　\n└┘　　\\ \\   \n　　　└┘\n",
       },
       {
         text: "ボ",
-
         unicode: "\u30DC",
         art: "　　┌┬┬┐\n┌─┘└┴┤\n└─┐┌─┘\n┌┐┃┃┌┐\n└┘└┘└┘\n",
       },
@@ -915,13 +910,13 @@ export const data: Lib[] = [
         text: "パ",
 
         unicode: "\u30D1",
-        art: "    ┌┐\n ┌┐┌└┘\n ││││ \n │││└┐\n┌┘┘└┐│\n└┘  └┘\n",
+        art: "    ┌┐\n ┌┐┌└┘\n ┃┃┃┃ \n ┃┃│└┐\n┌┘┘└┐│\n└┘  └┘\n",
       },
       {
         text: "ピ",
 
         unicode: "\u30D4",
-        art: "┌┐  ┌┐\n││  └┘\n│└───┐\n│┌───┘\n│└───┐\n└────┘\n",
+        art: "┌┐  ┌┐\n┃┃  └┘\n│└───┐\n│┌───┘\n│└───┐\n└────┘\n",
       },
       {
         text: "プ",
@@ -933,26 +928,26 @@ export const data: Lib[] = [
         text: "ペ",
 
         unicode: "\u30DA",
-        art: "    ┌┐\n ┌─┐└┘\n┌┘─└┐ \n││ └└┐\n└┘  ││\n   └┘\n",
+        art: "    ┌┐\n ┌─┐└┘\n┌┘─└┐ \n┃┃ └└┐\n└┘  ┃┃\n   └┘\n",
       },
       {
         text: "ポ",
 
         unicode: "\u30DD",
-        art: "  ┌┐┌┐\n┌─┘└└┘\n└─┐┌─┘\n┌┐││┌┐\n││││││\n└┘└┘└┘\n",
+        art: "  ┌┐┌┐\n┌─┘└└┘\n└─┐┌─┘\n┌┐┃┃┌┐\n┃┃┃┃┃┃\n└┘└┘└┘\n",
       },
       // 小文字
       {
         text: "ァ",
 
         unicode: "\u30a1",
-        art: " ┌───┐\n └──┐│\n  ┌┐└┘\n  ││  \n  └┘  \n",
+        art: " ┌───┐\n └──┐│\n  ┌┐└┘\n  ┃┃  \n  └┘  \n",
       },
       {
         text: "ィ",
 
         unicode: "\u30a3",
-        art: "      \n        ┌┐\n┌─┘│\n└┐┌┘\n    ││   \n    └┘   \n",
+        art: "      \n        ┌┐\n┌─┘│\n└┐┌┘\n    ┃┃   \n    └┘   \n",
       },
       {
         text: "ェ",
@@ -965,26 +960,24 @@ export const data: Lib[] = [
         text: "ャ",
 
         unicode: "\u30e3",
-        art: "      \n  ┌┐  \n ┌┘└─┐\n └┐┌┐│\n  ││└┘\n  └┘  \n",
+        art: "　┌┐\n┌┘└─┐\n└┐┌┐│\n　┃┃└┘\n　└┘  \n",
       },
       {
         text: "ュ",
 
         unicode: "\u30e5",
-        art: "      \n  ┌─┐ \n  └┐│ \n  ┌┘└┐\n  └──┘\n",
+        art: "　　　　\n  ┌─┐ \n  └┐│ \n  ┌┘└┐\n  └──┘\n",
       },
       {
         text: "ョ",
-
         unicode: "\u30e7",
-        art: "      \n  ┌──┐\n  ├─ │\n  ├─ │\n  └──┘\n",
+        art: "　　　　\n  ┌──┐\n  ├─ │\n  ├─ │\n  └──┘\n",
       },
       // 促音
       {
         text: "ッ",
-
         unicode: "\u30C3",
-        art: "      \n      \n ┌┬┐┌┐\n └┴┘││\n ┌──┘│\n └───┘\n",
+        art: "　　　　\n      \n ┌┬┐┌┐\n └┴┘┃┃\n ┌──┘│\n └───┘\n",
       },
     ],
   },
@@ -1040,6 +1033,58 @@ export const data: Lib[] = [
         text: "！",
         unicode: "\uff01",
         art: "　　┏┓　　\n　　┃┃　　\n　　┃┃　　\n　　┗┛　　\n　　┏┓　　\n　　┗┛　　\n",
+      },
+      {
+        text: "?",
+        unicode: "\u003F",
+        art: "　　┏┓　　\n　　┃┃　　\n　　┃┃　　\n　　┃┃　　\n　　┗┛　　\n",
+      },
+      {
+        text: "？",
+        unicode: "\uff1f",
+        art: "　　┏┓　　\n　　┃┃　　\n　　┃┃　　\n　　┃┃　　\n　　┗┛　　\n",
+      },
+      {
+        text: "(",
+        unicode: "\u0028",
+        art: "　　┏┓　\n　／／　　\n┃┃　　　\n┃┃　　　\n　＼＼　　\n　　┗┛　\n",
+      },
+      {
+        text: ")",
+        unicode: "\u0029",
+        art: "┏┓　　　\n　＼＼　　\n　　┃┃　\n　　┃┃　\n　／／　　\n┗┛　　　\n",
+      },
+      {
+        text: "（",
+        unicode: "\uFF08",
+        art: "　　┏┓　\n　／／　　\n┃┃　　　\n┃┃　　　\n　＼＼　　\n　　┗┛　\n",
+      },
+      {
+        text: "）",
+        unicode: "\uFF09",
+        art: "┏┓　　　\n　＼＼　　\n　　┃┃　\n　　┃┃　\n　／／　　\n┗┛　　　\n",
+      },
+    ],
+  },
+  {
+    kind: "Mark",
+    vector: "horizon",
+    width: "full",
+    letters: [
+      {
+        text: "ー",
+        unicode: "\u30fc",
+        art: "　　　　　　\n　　　　　　\n┏━━━━┓\n┗━━━━┛\n　　　　　　\n　　　　　　\n",
+      },
+      {
+        text: "!",
+        unicode: "\u0021",
+        art: "　┏┓　\n　┃┃　\n　┃┃　\n　┗┛　\n　┏┓　\n　┗┛　\n",
+      },
+      {
+        text: "！",
+        unicode: "\uff01",
+        art: "　┏┓　\n　┃┃　\n　┃┃　\n　┗┛　\n　┏┓　\n　┗┛　\n",
       },
       {
         text: "?",
