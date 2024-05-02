@@ -1,7 +1,7 @@
 export default function Description() {
   return (
     <>
-      <div className="">
+      <div className="flex">
         <div>
           <p>　┏┓　</p>
           <p>　┃┃　</p>
@@ -10,7 +10,7 @@ export default function Description() {
           <p>　┏┓　</p>
           <p>　┗┛　</p>
         </div>
-        <p>
+        <p className="mt-3">
           入力した文字をX（旧Twitter）用のアスキーアートにして返すサイトです。{" "}
           <br />
           ・スペースが省略されるのを防ぐため、1行目にドットを置いています。
@@ -21,14 +21,14 @@ export default function Description() {
           <br />
           ・使っていい記号「！」「!」「？」「?」「ー」「-」「♡」。
         </p>
-      </div>
-      <div>
-        <p>　┏┓　</p>
-        <p>　┃┃　</p>
-        <p>　┃┃　</p>
-        <p>　┗┛　</p>
-        <p>　┏┓　</p>
-        <p>　┗┛　</p>
+        <div>
+          <p>　┏┓　</p>
+          <p>　┃┃　</p>
+          <p>　┃┃　</p>
+          <p>　┗┛　</p>
+          <p>　┏┓　</p>
+          <p>　┗┛　</p>
+        </div>
       </div>
     </>
   );
