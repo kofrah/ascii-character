@@ -30,7 +30,7 @@ export default function Form() {
   // バリデーション関数
   const validateInput = (value: string) => {
     // ひらがな、カタカナ、アルファベット、特定の記号のみを許可する正規表現
-    const regex = /^[ぁ-んァ-ンA-Za-z！!？?ー\-♡()（）]+$/;
+    const regex = /^[ぁ-んァ-ンA-Za-z！!？?ー\-♡()（）・]+$/;
     return (
       regex.test(value) ||
       "ひらがな、カタカナ、アルファベット、特定の記号以外が含まれています。"
@@ -179,7 +179,7 @@ export default function Form() {
             {widthOptions.map((item) => (
               <label className="radioGroup__label" key={item.value}>
                 <input
-                  className="radioGroup__radio"
+                  className="radioGroup__radio w-5"
                   type="radio"
                   {...register("widthOption", {
                     required: true,
@@ -194,12 +194,12 @@ export default function Form() {
           </div>
         </div>
         {/* 生成ボタン */}
-        <div>
+        <div className="flex justify-center">
           {submitButtons.map((button: SubmitButton) => (
             <button
               key={button.key}
               type="button"
-              className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+              className="py-2.5 px-5 me-2 w-32 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
               value={button.value}
               onClick={handleClickCreateButton}
             >
@@ -227,16 +227,16 @@ export default function Form() {
         ></textarea>
       </div>
       {/* 結果をコピー */}
-      <div className="">
+      <div className="flex justify-center">
         <button
           onClick={handleCopy}
-          className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          className="py-2.5 px-5 w-32 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
         >
           コピー
         </button>
         <button
           onClick={handleCopy}
-          className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          className="py-2.5 px-5 w-32 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
         >
           ツイート
         </button>

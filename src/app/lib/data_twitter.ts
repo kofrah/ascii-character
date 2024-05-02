@@ -424,7 +424,7 @@ export const data: Lib[] = [
       {
         text: "ビ",
         unicode: "\u30D3",
-        art: "┏┓　┏┳┓\n┃┃　┗┻┛\n┃┗━━━┓\n┃┏━━━┛\n┃┗━━━┓\n┗━━━━┛\n",
+        art: "　　　┏┳┓\n┏┓　┗┻┛\n┃┗━━━┓\n┃┏━━━┛\n┃┗━━━┓\n┗━━━━┛\n",
       },
       {
         text: "ブ",
@@ -1120,6 +1120,11 @@ export const data: Lib[] = [
         text: "♡",
         unicode: "\u2661",
         art: "　　＿　　＿　　\n　／　＼／　＼　\n（　　　　　　）\n　＼　　　　／　\n　　＼　　／　　\n　　　＼／　　　\n",
+      },
+      {
+        text: "・",
+        unicode: "\u30FB ",
+        art: "　　　　　　\n　　　　　　\n　　┏━┓　\n　　┃　┃　\n　　┗━┛　\n 　　　　　　\n",
       },
     ],
   },
