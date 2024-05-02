@@ -22,7 +22,7 @@ export default function Form() {
 
   // 変換結果のState
   const [result, setResult] = useState(
-    ".\n　┏━┏┳┓　┏┓　　　┏━━━━┓　　　┏┳┓　　┏┓　　\n　┗━┗┻┛┏┛┗━━┓┗━┓┏━┛┏━━┗┻┫　　┃┃　　\n┏━━━━┓┗┓┏━┓┃┏━┛┗━┓┣━━┫┃┃　　┃┃　　\n┗━┓┏━┛　┃┃　┃┃┗━┓┏━┛┗━━┛┃┃　　┗┛　　\n　┏┛┛　　┏┛┛┏┛┃　　┃┗━┓┏━━━┛┃　　┏┓　　\n　┗┛　　　┗┛　┗━┛　　┗━━┛┗━━━━┛　　┗┛　　\n"
+    ".#Dekamoji\n　┏━┏┳┓　┏┓　　　　┏┓　\n　┗━┗┻┛┏┛┗━━┓　┃┃　\n┏━━━━┓┗┓┏━┓┃　┃┃　\n┗━┓┏━┛　┃┃　┃┃　┗┛　\n　┏┛┛　　┏┛┛┏┛┃　┏┓　\n　┗┛　　　┗┛　┗━┛　┗┛　"
   );
 
   const submitRef = useRef<HTMLInputElement>(null);
@@ -31,10 +31,7 @@ export default function Form() {
   const validateInput = (value: string) => {
     // ひらがな、カタカナ、アルファベット、特定の記号のみを許可する正規表現
     const regex = /^[ぁ-んァ-ンA-Za-z！!？?ー\-♡()（）・]+$/;
-    return (
-      regex.test(value) ||
-      "ひらがな、カタカナ、アルファベット、特定の記号以外が含まれています。"
-    );
+    return regex.test(value) || "使えない文字が含まれています。";
   };
 
   // 変換オプション(記号)を使用するかのState
@@ -123,7 +120,7 @@ export default function Form() {
     }
 
     // Twitterの仕様上、一行目にドットがないとスペースが省略されてしまう
-    asciiArtArr.unshift(".\r");
+    asciiArtArr.unshift(".#Dekamoji\r");
 
     // 文字コードをAAに変換
     const asciiArt: string = asciiArtArr.join("");

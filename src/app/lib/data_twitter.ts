@@ -1074,7 +1074,7 @@ export const data: Lib[] = [
       {
         text: "ー",
         unicode: "\u30fc",
-        art: "　　　　　　\n　　　　　　\n┏━━━━┓\n┗━━━━┛\n　　　　　　\n　　　　　　\n",
+        art: "　　　　　\n　　　　　\n┏━━━┓\n┗━━━┛\n　　　　　\n　　　　　\n",
       },
       {
         text: "!",
