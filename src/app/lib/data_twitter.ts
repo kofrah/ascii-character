@@ -262,7 +262,7 @@ export const data: Lib[] = [
       {
         text: "マ",
         unicode: "\u30de",
-        art: "┏━━━━┓\n┗━━━┓┃\n　┏┓　┃┃\n　┃┗━┛┃\n　┃┏━━┛\n　┗┛　　　\n",
+        art: "┏━━━━┓\n┗━━━┓┃\n　━　　┃┃\n　＼＼／／　\n　　＼＼　　\n　　　━　　\n",
       },
       {
         text: "ミ",
