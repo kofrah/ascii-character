@@ -37,16 +37,6 @@ export default function Form() {
     );
   };
 
-  // ランダム生成のチェックボックスのState
-  const [useRandom, setUseRandom] = useState(false);
-  // 変換オプション(ひらがな)を使用するかのState
-  const [useHiragana, setUseHiragana] = useState(false);
-  // 変換オプション(カタカナ)を使用するかのState
-  const [useKatakana, setUseKatakana] = useState(false);
-  // 変換オプション(アルファベット)を使用するかのState
-  const [useAlphabet, setUseAlphabet] = useState(false);
-  // 変換オプション(記号)を使用するかのState
-  const [useMark, setUseMark] = useState(false);
   // 変換オプション(記号)を使用するかのState
   const [useHorizon, setUseHorizon] = useState(true);
 
@@ -141,20 +131,6 @@ export default function Form() {
     setResult(asciiArt);
   };
 
-  // ランダム作成チェックボックス押下
-  const handleUseRandom = (e: ChangeEvent<HTMLInputElement>): void => {
-    // オプションチェックボックスの活性制御
-    setUseRandom(e.target.checked);
-
-    if (e.target.checked) {
-      // 各オプションをチェックする
-      setUseHiragana(e.target.checked);
-      setUseKatakana(e.target.checked);
-      setUseAlphabet(e.target.checked);
-      setUseMark(e.target.checked);
-    }
-  };
-
   const handleClickCreateButton = (e: any) => {
     setUseHorizon(e.target.value === "horizon");
 
@@ -186,6 +162,7 @@ export default function Form() {
         <div>
           <input
             style={{ width: "100%" }}
+            className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
             placeholder="例：ア　A　1　!　?　(　)・　♡"
             {...register("inputArea", {
               required: "入力してください！",
@@ -198,15 +175,18 @@ export default function Form() {
         {/* オプションエリア */}
         {/* ラジオボタン(半角・全角) */}
         <div className="form__item">
-          <div className="radioGroup">
+          <div className="radioGroup hidden">
             {widthOptions.map((item) => (
               <label className="radioGroup__label" key={item.value}>
                 <input
                   className="radioGroup__radio"
                   type="radio"
-                  {...register("widthOption", { required: true })}
+                  {...register("widthOption", {
+                    required: true,
+                    disabled: true,
+                  })}
                   value={item.value}
-                  defaultChecked={item.key === 1}
+                  defaultChecked={item.key === 2}
                 />
                 {item.label}
               </label>
@@ -234,7 +214,7 @@ export default function Form() {
       {/* 結果 */}
       <div>
         <textarea
-          // className={styles.result}
+          className="whitespace-nowrap"
           style={{ width: "100%" }}
           cols={58}
           rows={15}

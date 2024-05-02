@@ -546,13 +546,12 @@ export const data: Lib[] = [
         text: "ァ",
 
         unicode: "\u30a1",
-        art: "　┏━━━┓\n　┗━━┓┃\n　　┏┓┗┛\n　　┃┃　　\n　　┗┛　　\n",
+        art: "　　　　　　\n　┏━━━┓\n　┗━━┓┃\n　　┏┓┗┛\n　　┃┃　　\n　　┗┛　　\n",
       },
       {
         text: "ィ",
-
         unicode: "\u30a3",
-        art: "　　　　　　\n 　　　　　┏┓\n┏━┛┃\n┗┓┏┛\n    ┃┃   \n    ┗┛   \n",
+        art: "　　　\n　　　　　┏┓\n┏━┛┃\n┗┓┏┛\n    ┃┃   \n    ┗┛   \n",
       },
       {
         text: "ェ",

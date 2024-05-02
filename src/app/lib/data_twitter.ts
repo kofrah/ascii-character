@@ -338,7 +338,7 @@ export const data: Lib[] = [
       {
         text: "ン",
         unicode: "\u30f3",
-        art: "　　　　┏┓\n┏━━┓┃┃\n┗━━┛┃┃\n　　　　┃┃\n┏━━━┛┃\n┗━━━━┛\n",
+        art: "　　　　　　\n┏━━┓┏┓\n┗━━┛┃┃\n　　　　┃┃\n┏━━━┛┃\n┗━━━━┛\n",
       },
       // 濁音
       {
@@ -471,12 +471,12 @@ export const data: Lib[] = [
       {
         text: "ァ",
         unicode: "\u30a1",
-        art: "　┏━━━┓\n　┗━━┓┃\n　　┏┓┗┛\n　　┃┃　　\n　　┗┛　　\n",
+        art: "　　　　　　\n　┏━━━┓\n　┗━━┓┃\n　　┏┓┗┛\n　　┃┃　　\n　　┗┛　　\n",
       },
       {
         text: "ィ",
         unicode: "\u30a3",
-        art: "　　　　　　\n 　　　　　┏┓\n┏━┛┃\n┗┓┏┛\n    ┃┃   \n    ┗┛   \n",
+        art: "　　　　\n　　┏┓\n┏━┛┃\n┗┓┏┛\n    ┃┃   \n    ┗┛   \n",
       },
       {
         text: "ェ",
@@ -1115,6 +1115,11 @@ export const data: Lib[] = [
         text: "）",
         unicode: "\uFF09",
         art: "┏┓　　　\n　＼＼　　\n　　┃┃　\n　　┃┃　\n　／／　　\n┗┛　　　\n",
+      },
+      {
+        text: "♡",
+        unicode: "\u2661",
+        art: "　　＿　　＿　　\n　／　＼／　＼　\n（　　　　　　）\n　＼　　　　／　\n　　＼　　／　　\n　　　＼／　　　\n",
       },
     ],
   },
