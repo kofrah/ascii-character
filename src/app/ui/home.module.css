@@ -1,7 +1,28 @@
 .result {
-    height: 200;
-    width: 200;
-    /* border-bottom: 30px solid black;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent; */
+  height: 200;
+  width: 200;
+}
+
+.title {
+  padding-bottom: 4px;
+  font-family: monospace; /* 等幅フォントを使用 */
+  white-space: pre; /* フォーマットを保持 */
+  font-size: 16px; /* 初期フォントサイズ */
+  justify-content: center;
+  text-align: center; /* テキストを中央揃えにする */
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 10px; /* 768px以下の画面でのフォントサイズ */
   }
+}
+
+.exclamation_sub {
+  display: none;
+}
+@media (max-width: 768px) {
+  .exclamation_sub {
+    display: block;/* 768px以下の画面でのフォントサイズ */
+  }
+}

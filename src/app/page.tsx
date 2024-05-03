@@ -1,27 +1,13 @@
 import Form from "./ui/form/form";
 import Description from "./ui/description/description";
+import Header from "./ui/header/header";
 
 export default function Home() {
   return (
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-4">
       {/* ヘッダー部 */}
-      <div>
-        <p>　┏━┏┳┓　┏┓　　　┏━━━━┓　　　┏┳┓</p>
-        <p>　┗━┗┻┛┏┛┗━━┓┗━┓┏━┛┏━━┗┻┫</p>
-        <p>┏━━━━┓┗┓┏━┓┃┏━┛┗━┓┣━━┫┃┃</p>
-        <p>┗━┓┏━┛　┃┃　┃┃┗━┓┏━┛┗━━┛┃┃</p>
-        <p>　┏┛┛　　┏┛┛┏┛┃　　┃┗━┓┏━━━┛┃</p>
-        <p>　┗┛　　　┗┛　┗━┛　　┗━━┛┗━━━━┛</p>
-      </div>
-      <div>
-        <p>　　　┏┳┓　　　　　　　┏┓　　┏┓　　　　　　　　　　┏━━━━┓</p>
-        <p>┏━━┗┻┫　　　　　┏━┛┗━┓┃┃　　　　　　　　　　┃┏━━┓┃</p>
-        <p>┣━━┫┃┃　┏━━┓┗━━┓┏┛┃┃　　┏┓┏━━━━┓┃┃┏━┛┃</p>
-        <p>┗━━┛┃┃　┗┓┏┛　┏┛┏╋┓┃┃　┏┏┛┗━━━━┛┗┛┗━┓┃</p>
-        <p>┏━━━┛┃　┏┛┗┓┏┛┫┃┗┛┃┗━┏┛　　　　　　　　　　┏┛┃</p>
-        <p>┗━━━━┛　┗━━┛┗┛┗┛　　┗━━┛　　　　　　　　　　　┗━┛</p>
-      </div>
+      <Header />
 
       {/* コンテンツ部 */}
       <div className="">
