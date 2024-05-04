@@ -277,7 +277,7 @@ export const data: Lib[] = [
       {
         text: "メ",
         unicode: "\u30e1",
-        art: "　　　　　　\n　┏┓　┏┓\n　┗┓━┏┛\n　┏┛━┗┓\n┏┛┛　┗┛\n┗┛　　　　\n",
+        art: "　　　　　　▁\n　　▁　　／／\n　　＼＼／／\n　　／／＼＼\n　／／　　▔\n　▔　　　　\n",
       },
       {
         text: "モ",
@@ -1123,8 +1123,98 @@ export const data: Lib[] = [
       },
       {
         text: "・",
-        unicode: "\u30FB ",
+        unicode: "\u30FB",
         art: "　　　　　　\n　　　　　　\n　　┏━┓　\n　　┃　┃　\n　　┗━┛　\n 　　　　　　\n",
+      },
+      {
+        text: "1",
+        unicode: "\u0031",
+        art: "┏━┓　\n┗┓┃　\n　┃┃　\n　┃┃　\n┏┛┗┓\n┗━━┛\n",
+      },
+      {
+        text: "１",
+        unicode: "\uFF11",
+        art: "┏━┓　\n┗┓┃　\n　┃┃　\n　┃┃　\n┏┛┗┓\n┗━━┛\n",
+      },
+      {
+        text: "2",
+        unicode: "\u0032",
+        art: "┏━━┓\n┗━┓┃\n┏━┛┃\n┃┏━┛\n┃┗━┓\n┗━━┛\n",
+      },
+      {
+        text: "２",
+        unicode: "\uFF12",
+        art: "┏━━┓\n┗━┓┃\n┏━┛┃\n┃┏━┛\n┃┗━┓\n┗━━┛\n",
+      },
+      {
+        text: "3",
+        unicode: "\u0033 ",
+        art: "┏━━┓\n┗━┓┃\n┏━┛┃\n┗━┓┃\n┏━┛┃\n┗━━┛\n",
+      },
+      {
+        text: "３",
+        unicode: "\uFF13",
+        art: "┏━━┓\n┗━┓┃\n┏━┛┃\n┗━┓┃\n┏━┛┃\n┗━━┛\n",
+      },
+      {
+        text: "4",
+        unicode: "\u0034 ",
+        art: "┏┓┏┓\n┃┃┃┃\n┃┗┛┃\n┗━┓┃\n　　┃┃\n　　┗┛\n",
+      },
+      {
+        text: "４",
+        unicode: "\uFF14",
+        art: "┏┓┏┓\n┃┃┃┃\n┃┗┛┃\n┗━┓┃\n　　┃┃\n　　┗┛\n",
+      },
+      {
+        text: "5",
+        unicode: "\u0035 ",
+        art: "┏━━┓\n┃┏━┛\n┃┗━┓\n┗━┓┃\n┏━┛┃\n┗━━┛\n",
+      },
+      {
+        text: "５",
+        unicode: "\uFF15",
+        art: "┏━━┓\n┃┏━┛\n┃┗━┓\n┗━┓┃\n┏━┛┃\n┗━━┛\n",
+      },
+      {
+        text: "6",
+        unicode: "\u0036",
+        art: "┏━━┓\n┃┏━┛\n┃┗━┓\n┃┏┓┃\n┃┗┛┃\n┗━━┛\n",
+      },
+      {
+        text: "６",
+        unicode: "\uFF16",
+        art: "┏━━┓\n┃┏━┛\n┃┗━┓\n┃┏┓┃\n┃┗┛┃\n┗━━┛\n",
+      },
+      {
+        text: "7",
+        unicode: "\u0037",
+        art: "┏━━┓\n┃┏┓┃\n┗┛┃┃\n　　┃┃\n　　┃┃\n　　┗┛\n",
+      },
+      {
+        text: "７",
+        unicode: "\uFF17",
+        art: "┏━━┓\n┃┏┓┃\n┗┛┃┃\n　　┃┃\n　　┃┃\n　　┗┛\n",
+      },
+      {
+        text: "8",
+        unicode: "\u0038",
+        art: "┏━━┓\n┃┏┓┃\n┃┗┛┃\n┃┏┓┃\n┃┗┛┃\n┗━━┛\n",
+      },
+      {
+        text: "８",
+        unicode: "\uFF18",
+        art: "┏━━┓\n┃┏┓┃\n┃┗┛┃\n┃┏┓┃\n┃┗┛┃\n┗━━┛\n",
+      },
+      {
+        text: "9",
+        unicode: "\u0039",
+        art: "┏━━┓\n┃┏┓┃\n┃┗┛┃\n┗━┓┃\n┏━┛┃\n┗━━┛\n",
+      },
+      {
+        text: "９",
+        unicode: "\uFF19",
+        art: "┏━━┓\n┃┏┓┃\n┃┗┛┃\n┗━┓┃\n┏━┛┃\n┗━━┛\n",
       },
     ],
   },

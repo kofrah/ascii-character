@@ -30,7 +30,7 @@ export default function Form() {
   // バリデーション関数
   const validateInput = (value: string) => {
     // ひらがな、カタカナ、アルファベット、特定の記号のみを許可する正規表現
-    const regex = /^[ぁ-んァ-ンA-Za-z！!？?ー\-♡()（）・]+$/;
+    const regex = /^[ぁ-んァ-ンA-Za-z1-9１-９！!？?ー\-♡()（）・]+$/;
     return regex.test(value) || "使えない文字が含まれています。";
   };
 
@@ -161,7 +161,7 @@ export default function Form() {
       )}`;
       window.open(tweetUrl, "_blank");
     } catch (err) {
-      console.log("Copy Failed");
+      console.log("Tweet Failed");
     }
   };
 
@@ -179,7 +179,9 @@ export default function Form() {
               validate: validateInput,
             })}
           />
-          {errors.inputArea && <span>{errors.inputArea.message}</span>}
+          {errors.inputArea && (
+            <span className="text-red-500">{errors.inputArea.message}</span>
+          )}
         </div>
 
         {/* オプションエリア */}

@@ -8,9 +8,8 @@ export default function Description() {
         <div className="mt-3">
           <ul className="list-disc pl-5">
             <li>入力した文字をデカくして返すサイトです。</li>
-            <li>Xの仕様上、1行目にドットを置いています。</li>
-            <li>ひらがなはカタカナに変換されます。</li>
-            <li>ひらがなは対応予定です。（のちのち...）</li>
+            <li>Xの仕様に対応するため、1行目にドットを置いています。</li>
+            <li>ひらがなは未対応です。（カタカナに変換されます。）</li>
             <li>連絡先はこちら</li>
           </ul>
         </div>
