@@ -1072,6 +1072,11 @@ export const data: Lib[] = [
     width: "full",
     letters: [
       {
+        text: "-",
+        unicode: "\u002d",
+        art: "　　　　　\n　　　　　\n┏━━━┓\n┗━━━┛\n　　　　　\n　　　　　\n",
+      },
+      {
         text: "ー",
         unicode: "\u30fc",
         art: "　　　　　\n　　　　　\n┏━━━┓\n┗━━━┛\n　　　　　\n　　　　　\n",
@@ -1125,6 +1130,16 @@ export const data: Lib[] = [
         text: "・",
         unicode: "\u30FB",
         art: "　　　　　　\n　　　　　　\n　　┏━┓　\n　　┃　┃　\n　　┗━┛　\n 　　　　　　\n",
+      },
+      {
+        text: "0",
+        unicode: "\u0030",
+        art: "┏━━┓\n┃┏┓┃\n┃┃┃┃\n┃┃┃┃\n┃┗┛┃\n┗━━┛\n",
+      },
+      {
+        text: "０",
+        unicode: "\uFF10",
+        art: "┏━━┓\n┃┏┓┃\n┃┃┃┃\n┃┃┃┃\n┃┗┛┃\n┗━━┛\n",
       },
       {
         text: "1",
