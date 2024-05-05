@@ -30,7 +30,7 @@ export default function Form() {
   // バリデーション関数
   const validateInput = (value: string) => {
     // ひらがな、カタカナ、アルファベット、特定の記号のみを許可する正規表現
-    const regex = /^[ぁ-んァ-ンA-Za-z0-9０-９！!？?ー\-♡()（）・]+$/;
+    const regex = /^[ぁ-んァ-ンA-Za-z0-9０-９:：！!？?ー\-♡()（）・]+$/;
     return regex.test(value) || "使えない文字が含まれています。";
   };
 

@@ -1273,17 +1273,17 @@ export const data: Lib[] = [
       {
         text: "A",
         unicode: "\u0041",
-        art: "┏━━┓　\n┃┏┓┃　\n┃┗┛┃　\n┃┏┓┃　\n┃┃┃┃　\n┗┛┗┛　\n",
+        art: "┏━━┓\n┃┏┓┃\n┃┗┛┃\n┃┏┓┃\n┃┃┃┃\n┗┛┗┛\n",
       },
       {
         text: "B",
         unicode: "\u0042",
-        art: "┏━＼　　\n┃┏┓┃　\n┃┗┛／　\n┃┏┓＼　\n┃┗┛┃　\n┗━／　　\n",
+        art: "┏━＼　\n┃┏┓┃\n┃┗┛／\n┃┏┓＼\n┃┗┛┃\n┗━／　\n",
       },
       {
         text: "C",
         unicode: "\u0043",
-        art: "┏━━┓　\n┃┏━┛　\n┃┃　　　\n┃┃　　　\n┃┗━┓　\n┗━━┛　\n",
+        art: "┏━━┓\n┃┏━┛\n┃┃　　\n┃┃　　\n┃┗━┓\n┗━━┛\n",
       },
       {
         text: "D",
@@ -1293,12 +1293,12 @@ export const data: Lib[] = [
       {
         text: "E",
         unicode: "\u0045",
-        art: "┏━━┓　\n┃┏━┛　\n┃┗━┓　\n┃┏━┛　\n┃┗━┓　\n┗━━┛　\n",
+        art: "┏━━┓\n┃┏━┛\n┃┗━┓\n┃┏━┛\n┃┗━┓\n┗━━┛\n",
       },
       {
         text: "F",
         unicode: "\u0046",
-        art: "┏━━┓　\n┃┏━┛　\n┃┗━┓　\n┃┏━┛　\n┃┃　　　\n┗┛　　　\n",
+        art: "┏━━┓\n┃┏━┛\n┃┗━┓\n┃┏━┛\n┃┃　　\n┗┛　　\n",
       },
       {
         text: "G",
@@ -1308,27 +1308,27 @@ export const data: Lib[] = [
       {
         text: "H",
         unicode: "\u0048",
-        art: "┏┓┏┓　\n┃┃┃┃　\n┃┗┛┃　\n┃┏┓┃　\n┃┃┃┃　\n┗┛┗┛　\n",
+        art: "┏┓┏┓\n┃┃┃┃\n┃┗┛┃\n┃┏┓┃\n┃┃┃┃\n┗┛┗┛\n",
       },
       {
         text: "I",
         unicode: "\u0049",
-        art: "┏━━┓　\n┗┓┏┛　\n　┃┃　　\n　┃┃　　\n┏┛┗┓　\n┗━━┛　\n",
+        art: "┏━━┓\n┗┓┏┛\n　┃┃　\n　┃┃　\n┏┛┗┓\n┗━━┛\n",
       },
       {
         text: "J",
         unicode: "\u004A",
-        art: "┏━━┓　\n┗┓┏┛　\n　┃┃　　\n　┃┃　　\n┏┛┃　　\n┗━┛　　\n",
+        art: "┏━━┓\n┗┓┏┛\n　┃┃　\n　┃┃　\n┏┛┃　\n┗━┛　\n",
       },
       {
         text: "K",
         unicode: "\u004B",
-        art: "┏┓┏┓　\n┃┃┃┃　\n┃┗┛┃　\n┃┏┓┛　\n┃┃┃┓　\n┗┛┗┛　\n",
+        art: "┏┓┏┓\n┃┃┃┃\n┃┗┛┃\n┃┏┓┛\n┃┃┃┓\n┗┛┗┛\n",
       },
       {
         text: "L",
         unicode: "\u004C",
-        art: "┏┓　　　\n┃┃　　　\n┃┃　　　\n┃┃　　　\n┃┗━┓　\n┗━━┛　\n",
+        art: "┏┓　　\n┃┃　　\n┃┃　　\n┃┃　　\n┃┗━┓\n┗━━┛\n",
       },
       {
         text: "M",
@@ -1338,17 +1338,17 @@ export const data: Lib[] = [
       {
         text: "N",
         unicode: "\u004E",
-        art: "┏┓┏┓　\n┃┗┓┃　\n┃　　┃　\n┃┗┓┃　\n┃┃┃┃　\n┗┛┗┛　\n",
+        art: "┏┓┏┓\n┃┗┓┃\n┃　　┃\n┃┗┓┃\n┃┃┃┃\n┗┛┗┛\n",
       },
       {
         text: "O",
         unicode: "\u004F",
-        art: "┏━━┓　\n┃┏┓┃　\n┃┃┃┃　\n┃┃┃┃　\n┃┗┛┃　\n┗━━┛　\n",
+        art: "┏━━┓\n┃┏┓┃\n┃┃┃┃\n┃┃┃┃\n┃┗┛┃\n┗━━┛\n",
       },
       {
         text: "P",
         unicode: "\u0050",
-        art: "┏━━┓　\n┃┏┓┃　\n┃┗┛┃　\n┃┏━┛　\n┃┃　　　\n┗┛　　　\n",
+        art: "┏━━┓\n┃┏┓┃\n┃┗┛┃\n┃┏━┛\n┃┃　　\n┗┛　　\n",
       },
       {
         text: "Q",
@@ -1363,17 +1363,17 @@ export const data: Lib[] = [
       {
         text: "S",
         unicode: "\u0053",
-        art: "┏━━┓　\n┃┏━┛　\n┃┗━┓　\n┗━┓┃　\n┏━┛┃　\n┗━━┛　\n",
+        art: "┏━━┓\n┃┏━┛\n┃┗━┓\n┗━┓┃\n┏━┛┃\n┗━━┛\n",
       },
       {
         text: "T",
         unicode: "\u0054",
-        art: "┏━━┓　\n┗┓┏┛　\n　┃┃　　\n　┃┃　　\n　┃┃　　\n　┗┛　　\n",
+        art: "┏━━┓\n┗┓┏┛\n　┃┃　\n　┃┃　\n　┃┃　\n　┗┛　\n",
       },
       {
         text: "U",
         unicode: "\u0055",
-        art: "┏┓┏┓　\n┃┃┃┃　\n┃┃┃┃　\n┃┃┃┃　\n┃┗┛┃　\n┗━━┛　\n",
+        art: "┏┓┏┓\n┃┃┃┃\n┃┃┃┃\n┃┃┃┃\n┃┗┛┃\n┗━━┛\n",
       },
       {
         text: "V",
@@ -1393,7 +1393,7 @@ export const data: Lib[] = [
       {
         text: "Y",
         unicode: "\u0059",
-        art: "┏┓┏┓　\n┃┃┃┃　\n┃┗┛┃　\n┗┓┏┛　\n　┃┃　　\n　┗┛　　\n",
+        art: "┏┓┏┓\n┃┃┃┃\n┃┗┛┃\n┗┓┏┛\n　┃┃　\n　┗┛　\n",
       },
       {
         text: "Z",
@@ -1518,6 +1518,16 @@ export const data: Lib[] = [
         text: "・",
         unicode: "\u30FB",
         art: "　　　　　　\n　　　　　　\n　　┏━┓　\n　　┃　┃　\n　　┗━┛　\n 　　　　　　\n",
+      },
+      {
+        text: ":",
+        unicode: "\u003A",
+        art: "┏┓\n┃┃\n┗┛\n┏┓\n┃┃\n┗┛\n",
+      },
+      {
+        text: "：",
+        unicode: "\uFF1A",
+        art: "┏┓\n┃┃\n┗┛\n┏┓\n┃┃\n┗┛\n",
       },
       {
         text: "0",
