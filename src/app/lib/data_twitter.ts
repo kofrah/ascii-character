@@ -561,7 +561,7 @@ export const data: Lib[] = [
       {
         text: "メ",
         unicode: "\u30e1",
-        art: "　　　　　　▁\n　　▁　　／／\n　　＼＼／／\n　　／／＼＼\n　／／　　▔\n　▔　　　　\n",
+        art: "　　　　　▁\n　▁　　／／\n　＼＼／／　\n　／／＼＼　\n／／　　▔　\n▔　　　　　\n",
       },
       {
         text: "モ",
@@ -1318,7 +1318,7 @@ export const data: Lib[] = [
       {
         text: "J",
         unicode: "\u004A",
-        art: "┏━━┓　\n┗┓┏┛　\n　┃┃　　\n　┃┃　　\n　┃┃　　\n┏┛┃　　\n┗━┛　　\n",
+        art: "┏━━┓　\n┗┓┏┛　\n　┃┃　　\n　┃┃　　\n┏┛┃　　\n┗━┛　　\n",
       },
       {
         text: "K",
@@ -1353,17 +1353,17 @@ export const data: Lib[] = [
       {
         text: "Q",
         unicode: "\u0051",
-        art: "NotCreated!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n",
+        art: "┏━━┓　\n┃┏┓┃　\n┃┃┃┃　\n┃┣┛┗┓\n┃┗　┏┛\n┗━━┛　\n",
       },
       {
         text: "R",
         unicode: "\u0052",
-        art: "NotCreated!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n",
+        art: "┏━━━┓\n┃┏━┓┃\n┃┗━┛┃\n┃┏┓┏┛\n┃┃┃┃　\n┗┛┗┛　\n",
       },
       {
         text: "S",
         unicode: "\u0053",
-        art: "NotCreated!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n",
+        art: "┏━━┓　\n┃┏━┛　\n┃┗━┓　\n┗━┓┃　\n┏━┛┃　\n┗━━┛　\n",
       },
       {
         text: "T",
@@ -1378,7 +1378,7 @@ export const data: Lib[] = [
       {
         text: "V",
         unicode: "\u0056",
-        art: "NotCreated!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n",
+        art: "┏┓┏┓　\n┃┃┃┃　\n┃┃┃┃　\n \\ ┃┃ /　 \n  \\┗┛/　  \n　▔▔　　\n",
       },
       {
         text: "W",
@@ -1388,17 +1388,17 @@ export const data: Lib[] = [
       {
         text: "X",
         unicode: "\u0058",
-        art: "NotCreated!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n",
+        art: "▁　　　　▁\n＼＼　　／／\n　＼＼／／　\n　／／＼＼　\n／／　　＼＼\n▔　　　　▔\n",
       },
       {
         text: "Y",
         unicode: "\u0059",
-        art: "NotCreated!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n",
+        art: "┏┓┏┓　\n┃┃┃┃　\n┃┗┛┃　\n┗┓┏┛　\n　┃┃　　\n　┗┛　　\n",
       },
       {
         text: "Z",
         unicode: "\u005A",
-        art: "NotCreated!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n",
+        art: "┏━━━┓\n┗━━／／\n　　／／　\n　／／　　\n／／━━┓\n┗━━━┛\n",
       },
     ],
   },
