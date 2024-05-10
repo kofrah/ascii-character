@@ -1,14 +1,11 @@
-export type Kind = "Hiragana" | "Katakana" | "Alphabet" | "Mark";
-
 export type Letter = {
   text: string;
   unicode: string;
+  vector: Vector;
   art: string;
 };
 
 export type Lib = {
-  kind: Kind;
-  vector: Vector;
   width: Width;
   letters: Letter[];
 };
@@ -36,7 +33,7 @@ export const widthOptions: WidthOption[] = [
 ];
 
 // 生成ボタンの型定義
-export type Vector = "horizon" | "vertical";
+export type Vector = "both" | "horizon" | "vertical";
 
 export type VectorLabel = "生成（ヨコ）" | "生成（タテ）";
 

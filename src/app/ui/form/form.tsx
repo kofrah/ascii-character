@@ -1,14 +1,15 @@
 "use client";
 
-import { data } from "@/app/lib/data_twitter";
+import { libFull } from "@/app/lib/lib_full";
 import {
   Inputs,
   Letter,
   SubmitButton,
+  Vector,
   Width,
   submitButtons,
   widthOptions,
-} from "@/app/lib/definition";
+} from "@/app/lib/types/definition";
 import styles from "@/app/ui/home.module.css";
 import { ChangeEvent, useRef, useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
@@ -51,26 +52,35 @@ export default function Form() {
   };
 
   // アスキーアートに変換
-  const toAsciiArt = (char: string, width: Width): string => {
-    console.log(width);
+  const toAsciiArt = (char: string, width: Width, vector: Vector): string => {
+    console.log("width", width);
+    console.log("vector", vector);
 
-    let filterdData;
-    if (width === "half") {
-      filterdData = data.filter((x) => x.width === "half");
+    // TODO:半角対応
+    const letters: Letter[] = libFull.letters;
+
+    // 結果
+    let art: string | undefined;
+
+    // 最初に"both"に一致する要素を検索
+    art = letters.find(
+      (letter) => letter.text === char && letter.vector === "both"
+    )?.art;
+
+    // "both"に一致する要素がない場合、"horizon"に一致する要素を検索
+    art = art
+      ? art
+      : letters.find(
+          (letter) => letter.text === char && letter.vector === vector
+        )?.art;
+
+    // 結果
+    if (art) {
+      return art;
     } else {
-      filterdData = data.filter((x) => x.width === "full");
+      alert("デカ文字が存在しません！");
+      return "";
     }
-
-    // lib 配列内の対応する文字を検索
-    const art: string = filterdData.reduce((acc, item) => {
-      const foundLetter: Letter | undefined = item.letters.find(
-        (letter) => letter.text === char
-      );
-
-      return foundLetter ? foundLetter.art : acc;
-    }, "N/A");
-
-    return art;
   };
 
   // 渡された文字をアスキーアートに変換
@@ -95,14 +105,16 @@ export default function Form() {
   const createArt: SubmitHandler<Inputs> = (data: Inputs): void => {
     console.log("InputsData", data);
 
-    // アスキーアート変換前の文字列
+    // ひらがな -> カタカナ, a -> A
     const stringArr: string[] = data.inputArea
       .split("")
       .map((letter) => transformString(letter));
 
-    // アスキーアート変換後の文字列
+    const vector: Vector = useHorizon ? "horizon" : "vertical";
+
+    // 一文字ずつアスキーアートに変換
     let asciiArtArr: string[] = stringArr.map((string) =>
-      toAsciiArt(string, data.widthOption)
+      toAsciiArt(string, data.widthOption, vector)
     );
 
     // 横書き対応
