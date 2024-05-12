@@ -14,7 +14,7 @@
 
 @media (max-width: 768px) {
   .title {
-    font-size: 10px; /* 768px以下の画面でのフォントサイズ */
+    font-size: 9px; /* 768px以下の画面でのフォントサイズ */
   }
 }
 
