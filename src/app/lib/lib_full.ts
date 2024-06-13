@@ -736,7 +736,7 @@ export const libFull: Lib = {
       text: "ン",
       unicode: "\u30f3",
       vector: "both",
-      art: "　　　　　　\n┏━━┓┏┓\n┗━━┛┃┃\n　　　　┃┃\n┏━━━┛┃\n┗━━━━┛\n",
+      art: "　　　　　\n┏━┓┏┓\n┗━┛┃┃\n　　　┃┃\n┏━━┛┃\n┗━━━┛\n",
     },
     // 濁音
     {
@@ -1098,19 +1098,13 @@ export const libFull: Lib = {
       text: "-",
       unicode: "\u002d",
       vector: "horizon",
-      art: "　　　　　\n　　　　　\n┏━━━┓\n┗━━━┛\n　　　　　\n　　　　　\n",
-    },
-    {
-      text: "-",
-      unicode: "\u002d",
-      vector: "horizon",
-      art: "　　　　　\n　　　　　\n┏━━━┓\n┗━━━┛\n　　　　　\n　　　　　\n",
+      art: "　　　　\n　　　　\n┏━━┓\n┗━━┛\n　　　　\n　　　　\n",
     },
     {
       text: "ー",
       unicode: "\u30fc",
       vector: "horizon",
-      art: "　　　　　\n　　　　　\n┏━━━┓\n┗━━━┛\n　　　　　\n　　　　　\n",
+      art: "　　　　\n　　　　\n┏━━┓\n┗━━┛\n　　　　\n　　　　\n",
     },
     {
       text: "ー",
