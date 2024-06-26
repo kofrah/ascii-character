@@ -9,8 +9,8 @@ export default function Description() {
           <ul className="list-disc pl-5">
             <li>入力した文字をデカくして返すサイトです。</li>
             <li>Xの仕様に対応するため、1行目にドットを置いています。</li>
-            <li>ひらがなはカタカナに変換されます。</li>
-            <li>アルファベットは大文字に変換されます。</li>
+            <li>ひらがなはカタカナになります。</li>
+            <li>英字は大文字になります。</li>
             {/* <li>連絡先はこちら</li> */}
           </ul>
         </div>

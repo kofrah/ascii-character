@@ -185,7 +185,7 @@ export default function Form() {
           <input
             style={{ width: "100%" }}
             className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-            placeholder="ここにデカくしたい文字を入力（例：ア　A　1　!　?　(　)・　♡）"
+            placeholder="ここに文字を入力"
             {...register("inputArea", {
               required: "入力してください！",
               validate: validateInput,
@@ -194,6 +194,11 @@ export default function Form() {
           {errors.inputArea && (
             <span className="text-red-500">{errors.inputArea.message}</span>
           )}
+        </div>
+        <div className={styles.note}>
+          <p className="text-sm md:text-base lg:text-lg xl:text-xl underline">
+            対応文字：カナ, 英字, 数字, 記号（! ? ( ) ・ ♡）
+          </p>
         </div>
 
         {/* オプションエリア */}

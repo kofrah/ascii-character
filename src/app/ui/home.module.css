@@ -18,6 +18,12 @@
   }
 }
 
+.note {
+  padding-bottom: 4px;
+  justify-content: center;
+  text-align: center; /* テキストを中央揃えにする */
+}
+
 .exclamation_sub {
   display: none;
 }
