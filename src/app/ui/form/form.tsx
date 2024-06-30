@@ -197,7 +197,7 @@ export default function Form() {
         </div>
         <div className={styles.note}>
           <p className="text-sm md:text-base lg:text-lg xl:text-xl underline">
-            対応文字：カナ, 英字, 数字, 記号（! ? ( ) ・ ♡）
+            対応文字：カタカナ、英数字、記号（! ? ( ) ・ ♡）
           </p>
         </div>
 
