@@ -679,10 +679,9 @@ export const libFull: Lib = {
     },
     {
       text: "ユ",
-
       unicode: "\u30e6",
       vector: "both",
-      art: "　　　　　　\n　┏━━┓　\n　┗━┓┃　\n　　　┃┃　\n┏━━┛┗┓\n┗━━━━┛\n",
+      art: "　┏━━┓　\n　┗━┓┃　\n　　　┃┃　\n　　　┃┃　\n┏━━┛┗┓\n┗━━━━┛\n",
     },
     {
       text: "ヨ",
@@ -882,7 +881,7 @@ export const libFull: Lib = {
       text: "ペ",
       unicode: "\u30DA",
       vector: "both",
-      art: "　　　　┏┓\n　┏━┓┗┛\n┏┛━┗┓　\n┃┃　┗┗┓\n┗┛　　┃┃\n　　　┗┛\n",
+      art: "　　　　┏┓\n　┏━┓┗┛\n┏┛━┗┓　\n┃┃　┗┗┓\n┗┛　　┃┃\n　　　　┗┛\n",
     },
     {
       text: "ポ",

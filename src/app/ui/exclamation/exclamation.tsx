@@ -8,12 +8,14 @@ export default function Exclamation() {
           <p>　┏┓　</p>
           <p>　┃┃　</p>
           <p>　┃┃　</p>
+          <p>　┃┃　</p>
           <p>　┗┛　</p>
           <p>　┏┓　</p>
           <p>　┗┛　</p>
         </div>
         <div className={styles.exclamation_sub}>
           <p>　┏┓　</p>
+          <p>　┃┃　</p>
           <p>　┃┃　</p>
           <p>　┃┃　</p>
           <p>　┗┛　</p>

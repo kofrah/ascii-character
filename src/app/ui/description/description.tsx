@@ -7,10 +7,14 @@ export default function Description() {
         <Exclamation />
         <div className="mt-3">
           <ul className="list-disc pl-5">
-            <li>入力した文字をデカくして返すサイトです。</li>
-            <li>Xの仕様に対応するため、1行目にドットを置いています。</li>
+            <li>入力した文字をデカくします。</li>
             <li>ひらがなはカタカナになります。</li>
             <li>英字は大文字になります。</li>
+            <li>デカ文字は1つあたり（だいたい）42文字分あります。</li>
+            <li>ハッシュタグは削除しても大丈夫です。</li>
+            <li>
+              Xにポストする場合、1行目を全て削除すると崩れるため注意してください。
+            </li>
             {/* <li>連絡先はこちら</li> */}
           </ul>
         </div>
