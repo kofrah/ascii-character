@@ -4,7 +4,6 @@ export default function Description() {
   return (
     <>
       <div className="flex justify-center">
-        <Exclamation />
         <div className="mt-3">
           <ul className="list-disc pl-5">
             <li>入力した文字をデカくします。</li>
@@ -18,7 +17,6 @@ export default function Description() {
             {/* <li>連絡先はこちら</li> */}
           </ul>
         </div>
-        <Exclamation />
       </div>
     </>
   );

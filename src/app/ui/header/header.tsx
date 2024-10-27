@@ -6,7 +6,12 @@ export default function Header() {
   return (
     <>
       <div className={styles.title}>
-        <Image src={localImage} alt="header" width={500} height={300} />
+        <Image
+          src={localImage}
+          alt="デカ文字ジェネレータ"
+          width={500}
+          height={300}
+        />
       </div>
     </>
   );
