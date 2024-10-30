@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# デカ文字ジェネレーター
 
-## Getting Started
+入力した文字を「デカ文字」(ASCII アート風に変換された大きな文字)に変換するツールです。
 
-First, run the development server:
+## URL
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<https://dekamoji-generator.com/>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 使用可能文字
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- カタカナ
+- 英数字
+- 一部の記号
+  - !
+  - ?
+  - (
+  - )
+  - ・
+  - ♡
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 使用方法
 
-## Learn More
+1. テキストボックスに変換したい文字を入力します。
+1. `生成`ボタンを押下することで、デカ文字を生成します。
+1. `コピー`ボタンを押下することで、デカ文字をクリップボードに貼り付けできます。
+1. `ポスト`ボタンを押下することで、X（旧 Twitter）に直接ポストできます。
 
-To learn more about Next.js, take a look at the following resources:
+## 使用上の注意
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- ひらがなは自動的にカタカナに変換されます。
+- 英字は自動的に大文字に変換されます
+- 変換されたデカ文字は、1 文字あたり約 42 文字分のスペースを使用します。
+- ハッシュタグ（#）は削除しても問題ありません。
+- X（旧 Twitter）などにポストする際には、1 行目を削除するとデカ文字の整列が崩れる可能性があるため、削除しないようにしてください。
